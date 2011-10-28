@@ -1,0 +1,12 @@
+# ignore the following files
+#######################
+error_log
+wp-config.php
+mediakit/
+wp-content/cache/
+wp-content/gallery/
+wp-content/plugins/
+wp-content/uploads/
+wp-content/advanced-cache.php
+wp-content/openx-wordpress-widget.tmp
+wp-content/wp-cache-config.php
