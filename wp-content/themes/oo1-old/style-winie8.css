@@ -1,0 +1,81 @@
+/*
+Theme Name: Atlanta Occasions
+Theme URI: http://www.benvigilinc.com/
+Description: Custom design for Atanta Occasions by <a href="http://www.benvigil.com/">Ben Vigil</a>.
+Version: 3.0
+Author: Ben Vigil
+Author URI: http://www.benvigil.com/
+Tags: custom
+
+	AO v3
+	http://www.benvigil.com/
+
+	This theme was designed and built by Ben Vigil.
+*/
+#post-editor-post .post .entry img {
+	width: auto;
+	height: auto;
+	max-width: 370px;
+}
+
+#oo-page-center {
+	padding: 0px 18px 0px 23px;
+	}
+
+/*
+Here's the gist of it:
+	-- The drop shadows look like CRAP in IE7/8
+	-- IE7/8 includes the shadow when positioning the top and left corners of elements.
+	
+To deal with the above problems, we are adding a very subtle border to the element to help the shadow
+not suck to badly, and we are positioning the top and left of the element -10px to put it back where 
+it should be.
+*/
+
+		#oo-lead-rotator {
+			top: -10px;
+			left: -10px;
+			padding: 20px 0px 0px 20px;
+			border: 1px solid #EEE;
+			}
+	#oo-featured-block1 {
+		margin-right: 7px;
+		top: -10px;
+		left: -10px;
+		border: 1px solid #EEE;
+		}
+	#oo-featured-block2 {
+		margin-right: 7px;
+		top: -10px;
+		left: -10px;
+		border: 1px solid #EEE;
+		}
+	#oo-featured-block3 {
+		top: -10px;
+		left: -10px;
+		border: 1px solid #EEE;
+		}
+
+	#oo-real-featured-slideshow {
+		top: -5px;
+		left: -10px;
+		padding: 20px 0px 0px 20px;
+		border: 1px solid #EEE;
+		}
+
+.post .entry > p:first-child:first-letter,
+.post .entry .pro-content > p:first-child:first-letter,
+#oo-real-featured-article-story:first-letter,
+#post-stylesource-post > p:first-child:first-letter,
+#post-editor-post > p:first-child:first-letter
+{
+    font-size: 67px;
+    margin: 6px 5px -5px 0;
+}
+
+p img {
+	top: -10px;
+	left: -10px;
+	border: 1px solid #EEE;
+	}
+

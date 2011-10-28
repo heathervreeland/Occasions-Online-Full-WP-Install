@@ -1,0 +1,36 @@
+/*
+Theme Name: Atlanta Occasions
+Theme URI: http://www.benvigilinc.com/
+Description: Custom design for Atanta Occasions by <a href="http://www.benvigil.com/">Ben Vigil</a>.
+Version: 3.0
+Author: Ben Vigil
+Author URI: http://www.benvigil.com/
+Tags: custom
+
+	AO v3
+	http://www.benvigil.com/
+
+	This theme was designed and built by Ben Vigil.
+*/
+#jsddm li ul {
+	margin: 0px 0px 0px 0px;
+}
+p img {
+	width: expression(this.width > 600 ? 600: true);
+	}
+
+.guidelist_image img {
+	width: expression(this.width > 125 ? 125: true);
+	height: expression(this.height > 125 ? 125: true);
+}
+
+.featured_image img{
+	width: expression(this.width > 125 ? 125: true);
+	height: expression(this.height > 125 ? 125: true);
+}
+
+#pro_image img {
+	width: expression(this.width > 125 ? 125: true);
+	height: expression(this.height > 125 ? 125: true);
+}
+

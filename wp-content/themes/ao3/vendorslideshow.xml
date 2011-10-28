@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<album>
+	<configuration scaleMode="scaleToFit" renderQuality="best" delay="4.5">
+		<caption displayMode="never" >
+			<title/>
+			<description/>
+			<shadow/>
+			<transition/>
+		</caption>
+		<navigation>
+			<albums>
+				<caption>
+					<title/>
+					<description/>
+				</caption>
+				<shadow/>
+				<transition>
+					<shadow/>
+				</transition>
+			</albums>
+			<items>
+				<shadow/>
+				<transition>
+					<shadow/>
+				</transition>
+			</items>
+			<shadow/>
+			<caption>
+				<title/>
+				<description/>
+			</caption>
+			<pageIndicator position="top" />
+		</navigation>
+		<reflection alpha="0.6" height="70" offset="0" />
+		<controller autoPlay="true" backgroundAlpha="0.7" backgroundColor="#444444" backgroundRoundness="20" disappearDelay="2" disappearMode="fade" iconColorDisable="#333333" iconColorDown="#cccccc" iconColorOver="#ffffff" iconColorUp="#cccccc" iconSpacing="5" margin="20,20,20,75" showFullScreenButton="false" showNavigationButton="false" startHidden="true" strokeColor="#777777" strokeWidth="1" >
+			<transition/>
+			<scrubBar backgroundColor="#444444" loadingColor="#666666" progressColor="#cccccc" width="250" />
+			<shadow color="#333333" />
+		</controller>
+		<mark>
+			<shadow/>
+		</mark>
+		<progress>
+			<shadow/>
+		</progress>
+		<transition/>
+		<shadow/>
+		<sound/>
+		<thumbnailNavigation backgroundAlpha="0.5" backgroundRoundness="7" type="normal" margin="5,5,5,10">
+			<items height="40" horizontalSpacing="7" verticalSpacing="5" width="40">
+				<shadow/>
+				<transition scale="1.07" >
+					<shadow/>
+				</transition>
+			</items>
+			<shadow/>
+		</thumbnailNavigation>
+	</configuration>
+	<contents>
+		<!-- ... -->
+	</contents>
+</album>
