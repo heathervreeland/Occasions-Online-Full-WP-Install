@@ -19,8 +19,11 @@
 				<div class="post-social-twitter"><a href="http://twitter.com/share" class="twitter-share-button" data-text="<?php echo $tweet_title; ?>" data-count="horizontal" data-via="OccasionsMag">Tweet This</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></div>
 				<div class="post-social-stumble"><script src="http://www.stumbleupon.com/hostedbadge.php?s=1&r=<?php the_permalink(); ?>"></script></div>
 				<div class="post-social-facebook"><iframe src="http://www.facebook.com/plugins/like.php?href=<?php the_permalink(); ?>&amp;layout=standard&amp;show_faces=false&amp;width=400&amp;action=like&amp;colorscheme=light&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:400px; height:35px;" allowTransparency="true"></iframe></div>
+        <?php //added by Ben Kaplan - 10/29/11 ?>
+        <div class="post-social-1plus"><div class="g-plusone" data-size="medium" data-annotation="bubble" data-width="50" data-href="<?php the_permalink(); ?>"></div></div>
 			</div>
 			<div class="entry">
+
 			
 				<?php
 				

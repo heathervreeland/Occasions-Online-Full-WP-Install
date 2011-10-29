@@ -141,5 +141,16 @@ qacct:"p-8bJUlYqzEaD76"
 </script>
 <!-- End ChartBeat code -->
 
+<!-- Start 1+ google script -->
+<?php //added by Ben Kaplan - 10/29/11  adds 1+ button on blog posts and business profiles?>
+<script type="text/javascript">
+(function() {
+var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+po.src = 'https://apis.google.com/js/plusone.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+})();
+</script>
+<!-- end 1+ google script -->
+
 </body>
 </html>

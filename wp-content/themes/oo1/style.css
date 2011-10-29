@@ -707,7 +707,13 @@ small {
 .post-social-facebook {
 	float: left;
 	height: 35px;
-	width: 400px;
+	width: 275px;
+	}
+.post-social-1plus {
+	float: right;
+	height: 35px;
+	width: 75px;
+  margin-left:20px;
 	}
 
 .post-social-facebook-small {
