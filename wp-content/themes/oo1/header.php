@@ -204,7 +204,7 @@ GA_googleFetchAds();
 			<div id="oo-links">
 				<a href="/about">about</a>
 				<a href="/submissions">submit a recent event</a>
-				<a href="/advertise">advertise</a>
+				<a href="http://mediakit.occasionsonline.com/">advertise</a>
 				<a onfocus="this.blur();" class="issue_link" href="http://issuu.com/occasionsmagazine/docs/fall2011?mode=embed&layout=http://skin.issuu.com/v/light/layout.xml&showFlipBtn=true">view magazine</a>
 				<a href="/badges">link to us</a>
 			</div>
