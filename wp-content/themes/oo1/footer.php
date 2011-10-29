@@ -83,7 +83,9 @@
 			<a href="/about">About</a> |
 			<a href="/submissions">Editorial Submissions</a> |
 			<a onfocus="this.blur();" class="issue_link" href="http://issuu.com/occasionsmagazine/docs/fall2011?mode=embed&layout=http://skin.issuu.com/v/light/layout.xml&showFlipBtn=true">View Magazine</a> |
-			<a href="/where-to-buy">Where To Buy</a>
+			<a href="/where-to-buy">Where To Buy</a> |
+			<a href="/terms-of-use">Terms of Use</a> |
+			<a href="/privacy-policy">Privacy Policy</a>
 			<!-- <?php echo get_num_queries(); ?> queries. <?php timer_stop(1); ?> seconds. -->
 		</div>
 	</div>
