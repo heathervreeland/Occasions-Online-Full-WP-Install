@@ -147,9 +147,20 @@
 					?>
 					<span class="oo-signature"><?php echo $first_name; ?></span> | <?php the_time('F jS, Y') ?> | <a href="/author/<?php the_author_nickname(); ?>">See all posts by <?php echo $first_name; ?></a>
 				</small>
-				<div class="post-footer">
-					<div class="float-right"><span class="head3">Share: </span><span class="head4"><a target="_blank" href="http://twitter.com/home?status=<?php echo "$tweet_title: "; the_permalink(); ?> via @OccasionsMag" title="Share this post on Twitter">Twitter</a> | <a target="_blank" href="http://www.facebook.com/sharer.php?u=<?php the_permalink();?>&t=<?php the_title(); ?>">Facebook</a></span></div>
-					<div class="head3"><?php comments_popup_link('Comment', 'Comment', 'Comment'); ?> <?php edit_post_link('E', '', ''); ?></div>
+				<div id="social-share" class="post-footer">
+					<div class="share-comment head3"><?php comments_popup_link('Comment', 'Comment', 'Comment'); ?> <?php edit_post_link('E', '', ''); ?></div>
+					<div class="share-social-media head3">
+            Share: 
+            <a target="_blank" href="http://twitter.com/home?status=<?php echo '$tweet_title: '; the_permalink(); ?> via @OccasionsMag" title="Share this post on Twitter">
+              <img src="<?php echo get_bloginfo('stylesheet_directory'); ?>/images/oo_social_twitter.png" alt="Twitter" width="25" height="25" />
+              </a> 
+              <a target="_blank" href="http://www.facebook.com/sharer.php?u=<?php the_permalink();?>&t=<?php the_title(); ?>">
+                <img src="<?php echo get_bloginfo('stylesheet_directory'); ?>/images/oo_social_facebook.png" alt="Facebook" width="25" height="25" />
+              </a>
+            </div>
+					<div class="share-subscribe">
+            <a href="/subscribe"><img src="<?php echo get_bloginfo('stylesheet_directory'); ?>/images/share-subscribe.png" /></a>
+          </div>
 				</div>
 				<div class="clear">&nbsp;</div>
 				<div class="ruled left"><span class="head2 ruled-text-left">Related Articles</span></div>

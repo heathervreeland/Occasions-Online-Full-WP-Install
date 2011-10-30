@@ -805,11 +805,32 @@ small {
 	color: #ABC178;
 	}
 
-.post-footer {
+#social-share.post-footer {
 	padding: 10px 0px;
 	border-top: 1px solid #666;
 	border-bottom: 1px solid #666;
+  height:25px;
 	}
+#social-share.post-footer div {
+  float:left; 
+}
+#social-share.post-footer .share-comment.head3,
+#social-share.post-footer .share-social-media.head3 {
+  height:25px;
+  margin:0;
+  line-height:25px;
+}
+#social-share.post-footer img {
+  vertical-align: middle;
+  margin:-7px 0 0 0;
+  padding:0;
+}
+#social-share.post-footer .share-social-media {
+  padding-left:100px;
+}
+#social-share.post-footer .share-subscribe {
+  float:right;
+}
 
 .linkwithin_div {
 	margin-bottom: 25px;
