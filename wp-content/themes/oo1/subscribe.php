@@ -397,6 +397,7 @@ if ($_POST['process'] == "1") {
 Auth Code: $authorization_code<br />
 Tran ID: $transaction_id
 </p>
+<p>Please allow 4-6 weeks for delivery of your first issue.</p>
 HEREDOC;
 
 			ob_start();
@@ -488,6 +489,7 @@ HEREDOC;
 ?>
 <div class="ruled left"><span class="head2 ruled-text-left">Subscription/Order Complete</span></div>
 <p>Thank you for your order!</p>
+<p>Please allow 4-6 weeks for delivery of your first issue.</p>
 <p>If you have any questions or need to get in touch with us, please email <a href="mailto:info@occasionsonline.com">info@occasionsonline.com</a></p>
 <p>PLEASE PRINT THIS PAGE FOR YOUR RECORDS.</p>
 <?php
@@ -792,6 +794,7 @@ if(!empty($err))  {
 	<p class="vendor_desc">Shipping City / State / Zipcode:</p>
 	<p class="vendor_txt"><input name="city_ship" type="text" id="city_ship" size="40" value="<?php echo $a['city_ship']; ?>" /> <input name="state_ship" type="text" id="state_ship" size="40" value="<?php echo $a['state_ship']; ?>" /> <input name="zipcode_ship" type="text" id="zipcode_ship" size="40" value="<?php echo $a['zipcode_ship']; ?>" /></p>
 
+  <p>Please allow 4-6 weeks for delivery of your first issue.</p>
 
 <input type="hidden" name="process" value="1" />
 <input type="hidden" name="ordertotal" value="<?php echo $ordertotal; ?>" />
@@ -945,7 +948,9 @@ $s1 .= '</select>';
 <p>SHIPPING:<br />
 &nbsp;&nbsp;&nbsp;&nbsp;$5 for 1 magazine<br />
 &nbsp;&nbsp;&nbsp;&nbsp;$10 for 2-9 magazines<br />
-&nbsp;&nbsp;&nbsp;&nbsp;$14 per box of 10</p>
+&nbsp;&nbsp;&nbsp;&nbsp;$14 per box of 10<br />
+Please allow 4-6 weeks for delivery of your first issue.
+</p>
 
 <input type="hidden" name="checkout" value="1" />
 <input class="subscription_submit" name="subscription_submit" type="submit" id="subscription_submit" value="Place my Order" />
