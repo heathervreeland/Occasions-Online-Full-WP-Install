@@ -332,6 +332,13 @@ if ($_POST['review_submitted'] == "1") {
 	}
 }
 
+// inserted by Ben Kaplan - 10/28/11 - begin process of removing nextgen gallery plugin 
+wp_enqueue_style('jcarousel-css','/media/js/jcarousel/skins/oo/skin.css');
+
+wp_enqueue_script('jquery-cycle','http://ajax.aspnetcdn.com/ajax/jquery.cycle/2.99/jquery.cycle.all.min.js?ver=2.99');
+wp_enqueue_script('carousel-javascript','/media/js/jcarousel/lib/jquery.jcarousel.js');
+wp_enqueue_script('slideshow-javascript','/media/js/slideshow.js','jquery-cycle,carousel-javascript',1,TRUE);
+
 
 get_header();
 
@@ -522,6 +529,8 @@ ao_set_sidebar_content($s, "prewidget");
 		<div class="post-social-twitter"><a href="http://twitter.com/share" class="twitter-share-button" data-text="<?php echo $tweet_title; ?>" data-count="horizontal" data-via="OccasionsMag">Tweet This</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></div>
 		<div class="post-social-stumble"><script src="http://www.stumbleupon.com/hostedbadge.php?s=1&r=<?php echo $plain_url; ?>"></script></div>
 		<div class="post-social-facebook"><iframe src="http://www.facebook.com/plugins/like.php?href=<?php echo $plain_url; ?>&amp;layout=standard&amp;show_faces=false&amp;width=400&amp;action=like&amp;colorscheme=light&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:400px; height:35px;" allowTransparency="true"></iframe></div>
+    <?php //added by Ben Kaplan - 10/29/11 ?>
+    <div class="post-social-1plus"><div class="g-plusone" data-size="medium" data-annotation="bubble" data-width="50" data-href="<?php the_permalink(); ?>"></div></div>
 	</div>
 
 	<?php
@@ -536,6 +545,30 @@ ao_set_sidebar_content($s, "prewidget");
 		}
 	}
 
+// added by Ben Kaplan - 10/28/11 - replaces nextgen gallery slideshow with jquery javascript version
+
+// get the list of full size images
+$images_large = $a['imagelist_large'];
+
+echo '<div id="vendor-slideshow-wrapper">';
+echo '<div id="slideshow-main"><ul>';
+
+$i = 1;
+foreach( $images_large as $img ) {
+  ($i == 1) ? $active = ' active' : $active = '';
+  echo '<li rel="p' . $i . '" class="p' . $i . $active . '">';
+  echo '<div>';
+  echo '<img src="' . $img . '" />';
+  echo '</div>';
+  echo '</li>';
+  $i++;
+}
+
+echo '</ul></div><!-- end slideshow-main -->';
+
+echo '</div><!-- end vendor-slideshow-wrapper -->';
+
+/*
 	if ($a['image_count'] > 0) {
 		echo <<<HEREDOC
 						<div class="monoslideshow"> 
@@ -565,6 +598,7 @@ ao_set_sidebar_content($s, "prewidget");
 						</script> 
 HEREDOC;
 	}
+*/
 	
 	if ($a['video_first'] != '1') {
 		if ($a['video_url'] != '' && substr($a['video_url'], 0, 4) == 'http') {

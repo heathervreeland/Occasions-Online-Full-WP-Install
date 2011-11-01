@@ -1,0 +1,25 @@
+#vendor-slideshow-wrapper {}
+  #vendor-slideshow-wrapper #slideshow-main {}
+    #vendor-slideshow-wrapper #slideshow-main ul {
+      list-style:none;
+    }
+      #vendor-slideshow-wrapper #slideshow-main ul li {
+        margin:0 auto;
+        text-align:center;
+      }
+        #vendor-slideshow-wrapper #slideshow-main ul li div {
+          width:625px;
+        }
+    #vendor-slideshow-wrapper #slideshow-main #vendor-slideshow-nav {}
+    #vendor-slideshow-wrapper #slideshow-main #vendor-slideshow-nav a {
+      float:left;
+      width:75px;
+      height:100px;
+      margin:0 5px 5px 0;
+      padding:5px;
+      background:#000000;
+    }
+    #vendor-slideshow-wrapper #slideshow-main #vendor-slideshow-nav a img {
+      margin:0 auto;
+      max-height:90px;
+    }
