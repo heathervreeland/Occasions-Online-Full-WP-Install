@@ -1,8 +1,9 @@
 # ignore the following files
 #######################
 error_log
-wp-config.php
 mediakit/
+sitemap-wp.xml
+wp-config.php
 wp-content/cache/
 wp-content/gallery/
 wp-content/plugins/
