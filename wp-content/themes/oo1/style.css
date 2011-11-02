@@ -1367,15 +1367,21 @@ body a:hover { text-decoration: none; color: #F59DB2; }
 .head2,
 .head2 a {
 	font-size: 28px;
-	color: #8B8679;
+	color: #F29EB3;
 	text-transform: uppercase;
 	text-decoration: none;
 	text-align: left;
 	}
+.head2 a:hover {
+	color: #8B8679;
+	}
 .head3,
 .head3 a {
 	font-size: 20px;
+	color: #F29EB3;
+  /*
 	color: #00a79d;
+  */
 	text-transform: uppercase;
 	text-decoration: none;
 	text-align: left;

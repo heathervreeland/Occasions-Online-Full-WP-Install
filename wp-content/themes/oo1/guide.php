@@ -70,7 +70,7 @@ get_header();
 					}
 					elseif ($cur_cat == 'home') {
 ?>
-						<div class="ruled"><span class="head2 oo-color-brown ruled-text-left">Atlanta Event Services</span></div>
+						<div class="ruled"><span class="head2 ruled-text-left">Atlanta Event Services</span></div>
 <?php
 						$categories = new Pod('categories');
 						$categories->findRecords( '', 0, '', 'SELECT name, slug, short_title, description FROM wp_pod_tbl_categories WHERE hide <> 1 ORDER BY sort_order, name');
@@ -101,7 +101,7 @@ get_header();
 
 ?>
 						<p>&nbsp;</p>
-						<div class="ruled"><span class="head2 oo-color-brown ruled-text-left">Atlanta Event Venues</span></div>
+						<div class="ruled"><span class="head2 ruled-text-left">Atlanta Event Venues</span></div>
 <?php
 						$types = new Pod('venue_types');
 						$types->findRecords( '', 0, '', 'SELECT name, slug FROM wp_pod_tbl_venue_types ORDER BY name');
@@ -207,7 +207,7 @@ get_header();
 						$services->findRecords( '', 0, '', 'SELECT name, slug, description FROM wp_pod_tbl_categories WHERE parentid IN (3) AND hide <> 1 ORDER BY name');
 						$total_cats = $services->getTotalRows();
 						
-						echo '<div class="ruled left"><span class="head3 oo-color-brown ruled-text-left">' . $cur_head . '</span></div>';
+						echo '<div class="ruled left"><span class="head3 ruled-text-left">' . $cur_head . '</span></div>';
 						//echo "<h2>$cur_head</h2>";
 						echo "<p>$cur_desc</p>";
 						
@@ -245,7 +245,7 @@ HEREDOC;
 
 						// get the category
 						if (($cur_cat == 'search') && ($s != "")) {
-							echo '<div class="ruled left"><span class="head3 oo-color-brown ruled-text-left">' . $cur_head . '</span></div>';
+							echo '<div class="ruled left"><span class="head3 ruled-text-left">' . $cur_head . '</span></div>';
 							//echo "<h2>$cur_head</h2>";
 							$s = mysql_real_escape_string(strip_tags($_GET['s']));
 							$sqlwhere = "profile_type = 'platinum' ".
@@ -259,7 +259,7 @@ HEREDOC;
 						}
 						else {	
 
-							echo '<div class="ruled left"><span class="head3 oo-color-brown ruled-text-left">' . $cur_head . iif($sub_cat_name != '', " ($sub_cat_name)", '') . '</span></div>';
+							echo '<div class="ruled left"><span class="head3 ruled-text-left">' . $cur_head . iif($sub_cat_name != '', " ($sub_cat_name)", '') . '</span></div>';
 							//echo "<h2>$cur_head", iif($sub_cat_name != '', " ($sub_cat_name)", ''), "</h2>";
 							echo "<p>$cur_desc</p>";
 
