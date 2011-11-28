@@ -34,14 +34,17 @@
 
 /**
  * The reCAPTCHA server URL's
+ *
+ * modified by Ben Kaplan - 11/26/11
+ * The keys were re-created using the google account, heather@occasionsonline.com
  */
 define("RECAPTCHA_API_SERVER", "http://www.google.com/recaptcha/api");
 define("RECAPTCHA_API_SECURE_SERVER", "https://www.google.com/recaptcha/api");
 define("RECAPTCHA_VERIFY_SERVER", "www.google.com");
 
 /*************** reCAPTCHA KEYS****************/
-$publickey = "6LeLN7wSAAAAAO2RLZYL5XYZWPFunVKrQ7_0q2xL";
-$privatekey = "6LeLN7wSAAAAAI3HGwsLBdV_eAHv32ujP9Xw7GP9";
+$publickey = "6LdbmsoSAAAAALguJ2MTfMkJBZBd5dnukYXLZ59j";
+$privatekey = "6LdbmsoSAAAAAGLOGDyIhDhDAef00xr9WHx3owHs";
 
 
 /**
