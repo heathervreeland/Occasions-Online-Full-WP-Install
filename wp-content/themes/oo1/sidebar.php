@@ -3,6 +3,16 @@
  * @package WordPress
  * @subpackage Default_Theme
  */
+
+// pull the subdirectories
+$profile = pods_url_variable(0); 
+$cur_cat = pods_url_variable(1);
+//echo 'the cat is ' . $profile;
+
+// inserted by Ben Kaplan - 11/18/11
+// pull global variable set in profile.php
+global $is_venue;
+
 ?>
 	<div id="YYsidebar" role="complementary">
 <?php if ( is_front_page() ) { ?>
@@ -22,6 +32,42 @@ ao_sidebar_content('prewidget');
 
 <?php
 		}
+
+    // inserted by Ben Kaplan - 11/18/11
+    // checks to see if we are in a /venues directory
+    // if so, then display venues sub-nav
+    if ( $cur_cat == 'venues' ) { ?>
+
+      <div class="sidebar-nav">
+        <div class="oo-sidebar-section-title">Types of Venues <img src="http://dev.occasionsonline.com/wp-content/themes/oo1/images/oo-sidebar-divider.png"></div>
+        <dl class="oo-sidebar-nav-list">
+          <dd><a href="/atlanta/venues/hotel">Hotel Ballrooms</a></dd>
+          <dd><a href="/atlanta/venues/country-club">Country Clubs</a></dd>
+          <dd><a href="/atlanta/venues/antebellum-home">Antebellum Homes</a></dd>
+          <dd><a href="/atlanta/venues/outdoor">Outdoor</a></dd>
+          <dd><a href="/atlanta/venues/rooftop">Rooftop</a></dd>
+          <dd><a href="/atlanta">More . . .</a></dd>
+        </dl>
+      </div>
+
+<?php 
+    }
+
+    // inserted by Ben Kaplan - 11/18/11
+    // checks to see if we are in a /events directory
+    // if so, then display links to search pages for other party ideas 
+    if ( $profile == 'events' ) { ?>
+
+      <div class="sidebar-nav">
+        <div class="oo-sidebar-section-title">Party Ideas <img src="http://dev.occasionsonline.com/wp-content/themes/oo1/images/oo-sidebar-divider.png"></div>
+        <dl class="oo-sidebar-nav-list">
+          <dd><a href="/party-ideas/colors">Search by Color</a></dd>
+          <dd><a href="/party-ideas/party-themes">Search by Themes</a></dd>
+        </dl>
+      </div>
+
+<?php 
+    }
 		ao_sidebar_content('postwidget');
 		if (!ao_get_in_vendorarea()) {
 			include('ads-zone-right300.php');

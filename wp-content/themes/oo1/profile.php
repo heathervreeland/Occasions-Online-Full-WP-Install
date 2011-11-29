@@ -29,6 +29,18 @@ $total = $profile->getTotalRows();
 if( $total > 0 ) {
 	$profile->fetchRecord();
 	$a = get_vendorfields($profile);
+
+  // inserted by Ben Kaplan - 11/18/11
+  // ok, set a global variable and set to false
+  global $is_venue;
+  $is_venue = false;
+
+  // inserted by Ben Kaplan - 11/18/11
+  // if the vendor profile indicates that it's a venue, then set global variable to true
+  if ( $a["is_venue"] ) {
+    $is_venue = true;
+  }
+
 }
 else {
 	header("Location: http://www.occasionsonline.com/atlanta/");
@@ -428,6 +440,24 @@ $s .= '<p>&nbsp;</p>';
 $s .= '</div>';
 
 	$s .= '<div class="oo-sidebar-section">';
+
+  // inserted by Ben Kaplan - 11/18/11
+  // checks to see if we are in a vendor profile that is a Venue 
+  // if so, then display venues sub-nav
+  if ( $is_venue ) {
+    $s .= '<div class="sidebar-nav">';
+    $s .= '<div class="oo-sidebar-section-title">Types of Venues <img src="http://dev.occasionsonline.com/wp-content/themes/oo1/images/oo-sidebar-divider.png"></div>';
+    $s .= '<dl class="oo-sidebar-nav-list">';
+    $s .= '<dd><a href="/atlanta/venues/hotel">Hotel Ballrooms</a></dd>';
+    $s .= '<dd><a href="/atlanta/venues/country-club">Country Clubs</a></dd>';
+    $s .= '<dd><a href="/atlanta/venues/antebellum-home">Antebellum Homes</a></dd>';
+    $s .= '<dd><a href="/atlanta/venues/outdoor">Outdoor</a></dd>';
+    $s .= '<dd><a href="/atlanta/venues/rooftop">Rooftop</a></dd>';
+    $s .= '<dd><a href="/atlanta">More . . .</a></dd>';
+    $s .= '</dl>';
+    $s .= '</div>';
+  }
+
 	$s .= '<div class="oo-sidebar-section-title">Services<img src="' . get_bloginfo('stylesheet_directory') . '/images/oo-sidebar-divider.png" /></div>';
 	$s .= '</div>';
 	$categories = new Pod('categories');

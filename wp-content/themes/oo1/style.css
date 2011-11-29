@@ -556,6 +556,8 @@ SIDEBAR AREA
 	}
 
 
+.oo-sidebar-nav-list,
+.oo-sidebar-nav-list a,
 .oo-sidebar-guide-list,
 .oo-sidebar-guide-list a {
 	font-size: 11px;
@@ -567,6 +569,12 @@ SIDEBAR AREA
 	text-decoration: none;
 	}
 
+.oo-sidebar-nav-list {
+  margin-bottom:20px;
+}
+.oo-sidebar-nav-list dd {
+  margin: 0 0 5px 0;
+}
 
 
 
