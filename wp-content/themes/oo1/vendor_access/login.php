@@ -112,33 +112,26 @@ if ($_POST['doLogin']=='Login') {
       <form action="<?php echo PAGE_LOGIN; ?>" method="post" name="logForm" id="logForm" >
 
 		<div class="pro_contactrow">
-			<div class="pro_contactlabel" id="ven_label"><label for="txtemail">Username or Email</label></div>
-			<div class="pro_contacttxt" id="ven_txt"><input name="usr_email" type="text" class="required" id="txtemail" size="25" /></div>
+      <input name="usr_email" type="text" class="required" id="txtemail" size="25" /></br />
+      <label for="txtemail">Username or Email</label>
 		</div>
 
 		<div class="pro_contactrow">
-			<div class="pro_contactlabel" id="ven_label"><label for="txtpass">Password</label></div>
-			<div class="pro_contacttxt" id="ven_txt"><input name="pwd" type="password" class="required password" id="txtpass" size="25" /> <a href="<?php echo PAGE_FORGOT; ?>">Forgot Your Password?</a></div>
+      <input name="pwd" type="password" class="required password" id="txtpass" size="25" /> <br />
+      <label for="txtpass">Password</label>
 		</div>
 
 		<div class="pro_contactrow">
-			<div class="pro_contactlabel" id="ven_label"><label>&nbsp;</label></div>
-			<div class="pro_contacttxt" id="ven_txt"><input class="pro_checkbox" name="remember" type="checkbox" id="remember" value="1" /> <label for="remember">Remember me</label></div>
+			<input name="doLogin" type="submit" id="pro_contact_submit" value="Login" />
+			<input class="pro_checkbox" name="remember" type="checkbox" id="remember" value="1" /> <label for="remember">Remember me</label>
 		</div>
 
 		<div class="pro_contactrow">
-			<div class="pro_contactlabel" id="ven_label"><label>&nbsp;</label></div>
-			<div class="pro_contacttxt" id="ven_txt"><input name="doLogin" type="submit" id="pro_contact_submit" value="Login" /></div>
+      <a href="<?php echo PAGE_FORGOT; ?>">Forgot Your Password?</a>
 		</div>
 
 		<div class="pro_contactrow">
-			<div class="pro_contactlabel" id="ven_label"><label>&nbsp;</label></div>
-			<div class="pro_contacttxt" id="ven_txt">&nbsp;</div>
-		</div>
-
-		<div class="pro_contactrow">
-			<div class="pro_contactlabel" id="ven_label"><label>&nbsp;</label></div>
-			<div class="pro_contacttxt" id="ven_txt"><a href="<?php echo PAGE_REGISTER; ?>">New Advertiser Registration</a></div>
+			<a href="<?php echo PAGE_REGISTER; ?>">New Advertiser Registration</a>
 		</div>
 
         <p>&nbsp;</p>

@@ -218,64 +218,67 @@ THIS IS AN AUTOMATED RESPONSE.
 	<form action="<?php echo PAGE_REGISTER; ?>" method="post" name="regForm" id="regForm" >
 
 		<div class="pro_contactrow">
-			<div class="pro_contactlabel" id="ven_label"><label for="full_name">Company Name</label> <span class="required"><font color="#CC0000">*</font></span></div>
-			<div class="pro_contacttxt" id="ven_txt"><input name="full_name" type="text" id="full_name" size="40" class="required" /></div>
+			<input name="full_name" type="text" id="full_name" size="40" class="required" /><br />
+			<label for="full_name">Company Name</label> <span class="required"><font color="#CC0000">*</font></span>
 		</div>
 
 		<div class="pro_contactrow">
-			<div class="pro_contactlabel" id="ven_label"><label for="user_contact">Contact Name</label> <span class="required"><font color="#CC0000">*</font></span></div>
-			<div class="pro_contacttxt" id="ven_txt"><input name="user_contact" type="text" id="user_contact" class="required" /></div>
+			<input name="user_contact" type="text" id="user_contact" class="required" /><br />
+			<label for="user_contact">Contact Name</label> <span class="required"><font color="#CC0000">*</font></span>
 		</div>
 		
 		<div class="pro_contactrow">
-			<div class="pro_contactlabel" id="ven_label"><label for="user_title">Contact Title</label> <span class="required"><font color="#CC0000">*</font></span></div>
-			<div class="pro_contacttxt" id="ven_txt"><input name="user_title" type="text" id="user_title" class="required" /></div>
+			<input name="user_title" type="text" id="user_title" class="required" /><br />
+			<label for="user_title">Contact Title</label> <span class="required"><font color="#CC0000">*</font></span>
 		</div>
 		
 		<div class="pro_contactrow">
-			<div class="pro_contactlabel" id="ven_label"><label for="tel">Contact Phone</label> <span class="required"><font color="#CC0000">*</font></span></div>
-			<div class="pro_contacttxt" id="ven_txt"><input name="tel" type="text" id="tel" class="required" /></div>
+			<input name="tel" type="text" id="tel" class="required" /><br />
+			<label for="tel">Contact Phone</label> <span class="required"><font color="#CC0000">*</font></span>
 		</div>
 		
 		<p>&nbsp;</p>
 		<h2>Login Details</h2>
 
 		<div class="pro_contactrow">
-			<div class="pro_contactlabel" id="ven_label"><label for="tel">Username</label> <span class="required"><font color="#CC0000">*</font></span></div>
-			<div class="pro_contacttxt" id="ven_txt">
-				<input name="user_name" type="text" id="user_name" class="required username" minlength="5" /> 
+
+        <input name="user_name" type="text" id="user_name" class="required username" minlength="5" style="float:left;" />
+
 				<input name="btnAvailable" type="button" id="pro_contact_submit" 
+
 				onclick='$("#checkid").html("Please wait..."); $.get("<?php  echo PAGE_CHECKUSER; ?>",{ cmd: "check", user: $("#user_name").val() } ,function(data){  $("#checkid").html(data); });'
 				value="Check Availability"> 
+
 				<span style="color:red; font: bold 12px verdana; " id="checkid" ></span>
-			</div>
+
+        <div style="clear:both;">
+          <label for="tel">Username</label> <span class="required"><font color="#CC0000">*</font></span>
+        </div>
+
 		</div>
 		
 		<div class="pro_contactrow">
-			<div class="pro_contactlabel" id="ven_label"><label for="usr_email">Your Email</label> <span class="required email"><font color="#CC0000">*</font></span></div>
-			<div class="pro_contacttxt" id="ven_txt"><input name="usr_email" type="text" id="usr_email" class="required" /> <i>ex: name@domain.com</i></div>
+			<input name="usr_email" type="text" id="usr_email" class="required" /> <i>ex: name@domain.com</i><br />
+      <label for="usr_email">Your Email</label> <span class="required email"><font color="#CC0000">*</font></span>
 		</div>
 		
 		<div class="pro_contactrow">
-			<div class="pro_contactlabel" id="ven_label"><label for="pwd">Password</label> <span class="required"><font color="#CC0000">*</font></span></div>
-			<div class="pro_contacttxt" id="ven_txt"><input name="pwd" type="password" class="required password" minlength="5" id="pwd" /> ** 5 chars minimum</div>
+			<input name="pwd" type="password" class="required password" minlength="5" id="pwd" /> ** 5 chars minimum<br />
+			<label for="pwd">Password</label> <span class="required"><font color="#CC0000">*</font></span>
 		</div>
 		
 		<div class="pro_contactrow">
-			<div class="pro_contactlabel" id="ven_label"><label for="pwd2">Retype Password</label> <span class="required"><font color="#CC0000">*</font></span></div>
-			<div class="pro_contacttxt" id="ven_txt"><input name="pwd2"  id="pwd2" class="required password" type="password" minlength="5" equalto="#pwd" /></div>
+			<input name="pwd2"  id="pwd2" class="required password" type="password" minlength="5" equalto="#pwd" /><br />
+			<label for="pwd2">Retype Password</label> <span class="required"><font color="#CC0000">*</font></span>
 		</div>
 
 		<div class="pro_contactrow">
-			<div class="pro_contactlabel" id="ven_label"><label>Image Verification</label> <span class="required"><font color="#CC0000">*</font></span></div>
-			<div class="pro_contacttxt" id="ven_txt"><table><tr><td><?php require_once('recaptchalib.php'); echo recaptcha_get_html($publickey, null, true); ?></td></tr></table></div>
+			<table><tr><td><?php require_once('recaptchalib.php'); echo recaptcha_get_html($publickey, null, true); ?></td></tr></table>
+			<label>Image Verification</label> <span class="required"><font color="#CC0000">*</font></span>
 		</div>
 		
-        <p align="center">&nbsp; </p>
-
 		<div class="pro_contactrow">
-			<div class="pro_contactlabel" id="ven_label"><label>&nbsp;</label></div>
-			<div class="pro_contacttxt" id="ven_txt"><input name="doRegister" type="submit" id="pro_contact_submit" value="Register" /></div>
+			<input name="doRegister" type="submit" id="pro_contact_submit" value="Register" />
 		</div>
       <div style="height: 400px;">&nbsp;</div>
 

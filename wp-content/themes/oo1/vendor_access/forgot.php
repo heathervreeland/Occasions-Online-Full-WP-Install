@@ -141,22 +141,19 @@ THIS IS AN AUTOMATED RESPONSE.
 	<p align="center">&nbsp; </p>
 	
 	<div class="pro_contactrow">
-		<div class="pro_contactlabel" id="ven_label"><label for="txtboxe">Your Username</label> <span class="required"><font color="#CC0000">*</font></span></div>
-		<div class="pro_contacttxt" id="ven_txt"><input name="user_name" type="text" class="required name" id="txtboxe" size="25" /></div>
+		<input name="user_name" type="text" class="required name" id="txtboxe" size="25" /><br />
+		<label for="txtboxe">Your Username</label> <span class="required"><font color="#CC0000">*</font></span>
 	</div>
 
 	<p align="center">OR...</p>
 	
 	<div class="pro_contactrow">
-		<div class="pro_contactlabel" id="ven_label"><label for="txtboxn">Your Email</label> <span class="required"><font color="#CC0000">*</font></span></div>
-		<div class="pro_contacttxt" id="ven_txt"><input name="user_email" type="text" class="required email" id="txtboxn" size="25" /></div>
+		<input name="user_email" type="text" class="required email" id="txtboxn" size="25" /><br />
+		<label for="txtboxn">Your Email</label> <span class="required"><font color="#CC0000">*</font></span>
 	</div>
 	
-	<p align="center">&nbsp; </p>
-	
 	<div class="pro_contactrow">
-		<div class="pro_contactlabel" id="ven_label"><label>&nbsp;</label></div>
-		<div class="pro_contacttxt" id="ven_txt"><input name="doReset" type="submit" id="pro_contact_submit" value="Reset Password"></div>
+		<input name="doReset" type="submit" id="pro_contact_submit" value="Reset Password">
 	</div>
 	
 	<div style="height: 500px;">&nbsp;</div>

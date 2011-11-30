@@ -2306,6 +2306,15 @@ select {
 	width: 130px;
 	}
 
+#regForm { 
+  text-align:left;
+}
+#actForm input[type="password"], 
+#actForm input[type="text"], 
+#regForm input[type="password"], 
+#regForm input[type="text"], 
+#logForm input[type="password"], 
+#logForm input[type="text"], 
 #commentform input {
 	background: none repeat scroll 0 0 #E9E9E0;
     border: 3px solid #D3D2CA;
@@ -2330,6 +2339,9 @@ select {
 	    clear: both; 
 	    visibility: hidden;
 	}
+#actForm input[type="submit"], 
+#regForm input[type="submit"], 
+#logForm input[type="submit"], 
 #commentform #submit {
 	background: none repeat scroll 0 0 #FFFFFF;
     border: 1px solid #00A79D;
@@ -2341,6 +2353,23 @@ select {
     padding: 10px;
     text-transform: uppercase;
     width: 170px;
+	}
+#regForm input[type="button"] {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border: 1px solid #00A79D;
+  color: #00A79D;
+  float: left;
+  font-family: GillSansRegular,Arial,Helvetica,sans-serif;
+  font-size: 10px;
+  margin:7px 0 0 15px;
+  padding: 5px;
+  text-transform: uppercase;
+}
+
+#actForm input[type="submit"], 
+#regForm input[type="submit"], 
+#logForm input[type="submit"] { 
+    float: none;
 	}
 /* End Form Elements */
 
@@ -3237,6 +3266,8 @@ div.aligncenter {
 .pro_reviewrow {
 	display: block;
 	clear: both;
+  text-align:left;
+  margin-bottom:15px;
 }
 
 .pro_contactlabel,
@@ -3314,6 +3345,7 @@ label {
 	padding: 3px;
 }
 
+.pro_contactrow .pro_checkbox,
 .pro_contacttxt .pro_checkbox,
 .pro_reviewtxt .pro_checkbox {
 	width: 10px;
@@ -3364,6 +3396,9 @@ label {
 	background-color: #EEE;
 	cursor: pointer;
 	cursor: hand;
+}
+.pro_contacttxt #pro_contact_submit {
+  display:block;
 }
 
 #ven_txt #pro_contact_submit {
