@@ -837,7 +837,7 @@ $s1 .= '</select>';
 <p>Subscriptions are NOW available for Occasions Magazine!</p>
 
 <div class="subscription-block">
-	<img src="/media/images/occasions_fall2011_badge_145w.jpg" />
+	<img src="/media/images/occasions_winter2012_badge_145w.jpg" />
 	<div class="head3 oo-color-brown">Annual Print Subscription</div>
 	<div class="head5 normalcase">REGION: Atlanta</div>
 	<p>Occasions Magazine IS the magazine for celebrating in style. The tri-annual 
@@ -857,58 +857,19 @@ $s1 .= '</select>';
 
 
 <div class="backissue-block1 clearme"><div class="backissue-block2">
-	<img src="/media/images/issue-summer-fall-2009.jpg" />
-	<div><span class="head3 oo-color-brown">Summer/Fall 2009</span> <span class="premier-issue oo-fancy">Premier Issue</span></div>
+	<img src="/media/images/occasions_fall2011_badge_145w.jpg" />
+	<div><span class="head3 oo-color-brown">Fall 2011 (current issue)</span></div>
 	<div class="head5 normalcase">REGION: Atlanta</div>
-	<p>The Premiere Issue of Occasions Magazine hit newsstands July 1, 2009 
-	with a bang! Order our very first issue to see where it all started.</p>
+	<p>Cozy up to our Fall 2011 issue and you'll find a vibrant plum and bronze 
+	color story set among one of Atlanta's newest venues, Foxhall Resort and 
+	Sporting Club. We'll take you inside their lush landscape and give you party 
+	planning inspiration for any fall fete. Our venue guide continues to 
+	grow with more and more Atlanta reception sites and our real event features 
+	begin with a baby shower for Kim Zolciak from the Real Housewives of Atlanta. 
+	You don't want to miss getting your hands on a hard copy of this one!</p>
 	<div class="priceline">
-		<div class="subscription-price">&nbsp;</div>
-		<div class="subscription-price"><span class="subscription-soldout">SOLD OUT</span></div>
-	</div>
-	
-</div></div>
-
-<div class="backissue-block1 clearme"><div class="backissue-block2">
-	<img src="/media/images/issue-winter-spring-2010.jpg" />
-	<div><span class="head3 oo-color-brown">Winter/Spring 2010</span></div>
-	<div class="head5 normalcase">REGION: Atlanta</div>
-	<p>Winter 2010 was the issue of rooftop venues across Atlanta and the 
-	introduction of the city's chicest new venue, Ventanas. This issue 
-	features 7 real events and inspiration for a sorbet chic dinner setting.</p>
-	<div class="priceline">
-		<div class="subscription-price">&nbsp;</div>
-		<div class="subscription-price"><span class="subscription-soldout">SOLD OUT</span></div>
-	</div>
-</div></div>
-
-<div class="backissue-block1 clearme"><div class="backissue-block2">
-	<img src="/media/images/issue-summer-fall-2010.jpg" />
-	<div><span class="head3 oo-color-brown">Summer/Fall 2010</span></div>
-	<div class="head5 normalcase">REGION: Atlanta</div>
-	<p>The Summer 2010 issue introduced the city to it's most unique venue, 
-	200 Peachtree. An old Macy's department store, turned luxurious event 
-	venue in the heart of downtown Atlanta. This issue features 14 real 
-	event features and Atlanta's Top 10 most influential event planners.</p>
-	<div class="priceline">
-		<div class="subscription-price"><input name="sf2010" type="text" id="sf2010" size="2" class="subscription-text" value="<?php echo $a_cart['sf2010']; ?>" /> $5.99 EACH</div>
-		<div class="subscription-price"><input name="sf2010b" type="text" id="sf2010b" size="2" class="subscription-text" value="<?php echo $a_cart['sf2010b']; ?>" /> $50.00 / BOX OF 10</div>
-	</div>
-</div></div>
-
-<div class="backissue-block1 clearme"><div class="backissue-block2">
-	<img src="/media/images/occasions_winter2011_badge_145w.jpg" />
-	<div><span class="head3 oo-color-brown">Winter 2011</span></div>
-	<div class="head5 normalcase">REGION: Atlanta</div>
-	<p>Winter 2011 is full of warm ideas to keep readers cozy during the cold 
-	winter months of the south with a bright spring palette of honeysuckle, 
-	perfect for any table setting. This issue features 15 real event features 
-	and a jaw dropping bridal fashion shoot at Atlanta's most romantic venue, 
-	The Swan House. Plus a destination feature of The Breakers in Palm Beach, 
-	Florida.</p>
-	<div class="priceline">
-		<div class="subscription-price"><input name="w2010" type="text" id="w2010" size="2" class="subscription-text" value="<?php echo $a_cart['w2010']; ?>" /> $5.99 EACH</div>
-		<div class="subscription-price"><input name="w2010b" type="text" id="w2010b" size="2" class="subscription-text" value="<?php echo $a_cart['w2010b']; ?>" /> $50.00 / BOX OF 10</div>
+		<div class="subscription-price"><input name="f2011" type="text" id="f2011" size="2" class="subscription-text" value="<?php echo $a_cart['f2011']; ?>" /> $5.99 EACH</div>
+		<div class="subscription-price"><input name="f2011b" type="text" id="f2011b" size="2" class="subscription-text" value="<?php echo $a_cart['f2011b']; ?>" /> $50.00 / BOX OF 10</div>
 	</div>
 </div></div>
 
@@ -929,19 +890,57 @@ $s1 .= '</select>';
 </div></div>
 
 <div class="backissue-block1 clearme"><div class="backissue-block2">
-	<img src="/media/images/occasions_fall2011_badge_145w.jpg" />
-	<div><span class="head3 oo-color-brown">Fall 2011 (current issue)</span></div>
+	<img src="/media/images/occasions_winter2011_badge_145w.jpg" />
+	<div><span class="head3 oo-color-brown">Winter 2011</span></div>
 	<div class="head5 normalcase">REGION: Atlanta</div>
-	<p>Cozy up to our Fall 2011 issue and you'll find a vibrant plum and bronze 
-	color story set among one of Atlanta's newest venues, Foxhall Resort and 
-	Sporting Club. We'll take you inside their lush landscape and give you party 
-	planning inspiration for any fall fete. Our venue guide continues to 
-	grow with more and more Atlanta reception sites and our real event features 
-	begin with a baby shower for Kim Zolciak from the Real Housewives of Atlanta. 
-	You don't want to miss getting your hands on a hard copy of this one!</p>
+	<p>Winter 2011 is full of warm ideas to keep readers cozy during the cold 
+	winter months of the south with a bright spring palette of honeysuckle, 
+	perfect for any table setting. This issue features 15 real event features 
+	and a jaw dropping bridal fashion shoot at Atlanta's most romantic venue, 
+	The Swan House. Plus a destination feature of The Breakers in Palm Beach, 
+	Florida.</p>
 	<div class="priceline">
-		<div class="subscription-price"><input name="f2011" type="text" id="f2011" size="2" class="subscription-text" value="<?php echo $a_cart['f2011']; ?>" /> $5.99 EACH</div>
-		<div class="subscription-price"><input name="f2011b" type="text" id="f2011b" size="2" class="subscription-text" value="<?php echo $a_cart['f2011b']; ?>" /> $50.00 / BOX OF 10</div>
+		<div class="subscription-price"><input name="w2010" type="text" id="w2010" size="2" class="subscription-text" value="<?php echo $a_cart['w2010']; ?>" /> $5.99 EACH</div>
+		<div class="subscription-price"><input name="w2010b" type="text" id="w2010b" size="2" class="subscription-text" value="<?php echo $a_cart['w2010b']; ?>" /> $50.00 / BOX OF 10</div>
+	</div>
+</div></div>
+
+<div class="backissue-block1 clearme"><div class="backissue-block2">
+	<img src="/media/images/issue-summer-fall-2010.jpg" />
+	<div><span class="head3 oo-color-brown">Summer/Fall 2010</span></div>
+	<div class="head5 normalcase">REGION: Atlanta</div>
+	<p>The Summer 2010 issue introduced the city to it's most unique venue, 
+	200 Peachtree. An old Macy's department store, turned luxurious event 
+	venue in the heart of downtown Atlanta. This issue features 14 real 
+	event features and Atlanta's Top 10 most influential event planners.</p>
+	<div class="priceline">
+		<div class="subscription-price"><input name="sf2010" type="text" id="sf2010" size="2" class="subscription-text" value="<?php echo $a_cart['sf2010']; ?>" /> $5.99 EACH</div>
+		<div class="subscription-price"><input name="sf2010b" type="text" id="sf2010b" size="2" class="subscription-text" value="<?php echo $a_cart['sf2010b']; ?>" /> $50.00 / BOX OF 10</div>
+	</div>
+</div></div>
+
+<div class="backissue-block1 clearme"><div class="backissue-block2">
+	<img src="/media/images/issue-winter-spring-2010.jpg" />
+	<div><span class="head3 oo-color-brown">Winter/Spring 2010</span></div>
+	<div class="head5 normalcase">REGION: Atlanta</div>
+	<p>Winter 2010 was the issue of rooftop venues across Atlanta and the 
+	introduction of the city's chicest new venue, Ventanas. This issue 
+	features 7 real events and inspiration for a sorbet chic dinner setting.</p>
+	<div class="priceline">
+		<div class="subscription-price">&nbsp;</div>
+		<div class="subscription-price"><span class="subscription-soldout">SOLD OUT</span></div>
+	</div>
+</div></div>
+
+<div class="backissue-block1 clearme"><div class="backissue-block2">
+	<img src="/media/images/issue-summer-fall-2009.jpg" />
+	<div><span class="head3 oo-color-brown">Summer/Fall 2009</span> <span class="premier-issue oo-fancy">Premier Issue</span></div>
+	<div class="head5 normalcase">REGION: Atlanta</div>
+	<p>The Premiere Issue of Occasions Magazine hit newsstands July 1, 2009 
+	with a bang! Order our very first issue to see where it all started.</p>
+	<div class="priceline">
+		<div class="subscription-price">&nbsp;</div>
+		<div class="subscription-price"><span class="subscription-soldout">SOLD OUT</span></div>
 	</div>
 </div></div>
 
