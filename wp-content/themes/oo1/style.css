@@ -1038,7 +1038,7 @@ SUBSCRIPTION PAGE
 	}
 
 .subscription-price {
-    font-family: LaneNarrowRegular, 'Arial Narrow', Arial, sans-serif;
+    font-family: WinterthurCondensedRegular, 'Arial Narrow', Arial, sans-serif;
 	font-size: 16px;
 	color: #00a79d;
 	text-transform: uppercase;
@@ -1344,6 +1344,7 @@ body a:hover { text-decoration: none; color: #F59DB2; }
 .head1,
 .head2,
 .head3 {
+
 	font-family: AbadiMTCondExtraBoldRegular, 'Arial Narrow', Arial, sans-serif;
 	line-height: 100%;
 	font-weight: normal;
@@ -1436,7 +1437,7 @@ h1 {
 
 h2,
 h3{
-	font-family: LaneNarrowRegular, 'Helvetica Neue', Arial, Sans-Serif;
+	font-family: WinterthurCondensedRegular, 'Helvetica Neue', Arial, Sans-Serif;
 	}
 
 h1, 
@@ -1459,8 +1460,8 @@ h3 a:hover {
 	}
 
 h1 { font-size: 22px; line-height: 22px; margin: 30px 0px 10px 0px;}
-h2 { font-size: 22px; line-height: 22px; margin: 20px 0px 7px 0px;}
-h3 { font-size: 18px; line-height: 20px; margin: 10px 0px 5px 0px;}
+h2 { font-size: 28px; line-height: 28px; margin: 20px 0px 7px 0px;}
+h3 { font-size: 24px; line-height: 26px; margin: 10px 0px 5px 0px;}
 
 .knockout,
 .knockout a {
