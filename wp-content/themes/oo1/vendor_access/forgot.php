@@ -114,7 +114,9 @@ THIS IS AN AUTOMATED RESPONSE.
 	//});
 </script>
 
-<h2 class="titlehdr">Password Reset</h2>
+<div class="ruled left">
+    <span class="head2 ruled-text-left">Password Reset</span>
+    </div>
 
 <?php
 	  /******************** ERROR MESSAGES*************************************************
@@ -142,14 +144,14 @@ THIS IS AN AUTOMATED RESPONSE.
 	
 	<div class="pro_contactrow">
 		<input name="user_name" type="text" class="required name" id="txtboxe" size="25" /><br />
-		<label for="txtboxe">Your Username</label> <span class="required"><font color="#CC0000">*</font></span>
+		<label for="txtboxe">Your Username</label> <span class="required"><font color="#F29EB3">*</font></span>
 	</div>
 
 	<p align="center">OR...</p>
 	
 	<div class="pro_contactrow">
 		<input name="user_email" type="text" class="required email" id="txtboxn" size="25" /><br />
-		<label for="txtboxn">Your Email</label> <span class="required"><font color="#CC0000">*</font></span>
+		<label for="txtboxn">Your Email</label> <span class="required"><font color="#F29EB3">*</font></span>
 	</div>
 	
 	<div class="pro_contactrow">

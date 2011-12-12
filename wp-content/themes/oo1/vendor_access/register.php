@@ -194,14 +194,16 @@ THIS IS AN AUTOMATED RESPONSE.
   });
   </script>
 
-<p>
+
 	<?php 
 	 if (isset($_GET['done'])) { ?>
-	  <h2>Thank you</h2> Your registration is now complete and you can <a href="<?php echo PAGE_LOGIN; ?>">login here</a>";
+	  <h2>Thank you</h2> <p>Your registration is now complete and you can <a href="<?php echo PAGE_LOGIN; ?>">login here</a></p>
 	 <?php exit();
 	  }
-	?></p>
-      <h2>New Advertiser Registration</h2>
+	?>
+      <div class="ruled left">
+    <span class="head2 ruled-text-left">New Advertiser Registration</span>
+    </div>
       <p>Please register for a free courtesy advertiser account. Please note that fields marked <span class="required">*</span> 
         are required.</p>
 	 <?php
@@ -213,28 +215,29 @@ THIS IS AN AUTOMATED RESPONSE.
 	  echo "</div>";	
 	   }
 	 ?> 
+     
 	 
 	  <br>
 	<form action="<?php echo PAGE_REGISTER; ?>" method="post" name="regForm" id="regForm" >
 
 		<div class="pro_contactrow">
 			<input name="full_name" type="text" id="full_name" size="40" class="required" /><br />
-			<label for="full_name">Company Name</label> <span class="required"><font color="#CC0000">*</font></span>
+			<label for="full_name">Company Name</label> <span class="required"><font color="#F29EB3">*</font></span>
 		</div>
 
 		<div class="pro_contactrow">
 			<input name="user_contact" type="text" id="user_contact" class="required" /><br />
-			<label for="user_contact">Contact Name</label> <span class="required"><font color="#CC0000">*</font></span>
+			<label for="user_contact">Contact Name</label> <span class="required"><font color="#F29EB3">*</font></span>
 		</div>
 		
 		<div class="pro_contactrow">
 			<input name="user_title" type="text" id="user_title" class="required" /><br />
-			<label for="user_title">Contact Title</label> <span class="required"><font color="#CC0000">*</font></span>
+			<label for="user_title">Contact Title</label> <span class="required"><font color="#F29EB3">*</font></span>
 		</div>
 		
 		<div class="pro_contactrow">
 			<input name="tel" type="text" id="tel" class="required" /><br />
-			<label for="tel">Contact Phone</label> <span class="required"><font color="#CC0000">*</font></span>
+			<label for="tel">Contact Phone</label> <span class="required"><font color="#F29EB3">*</font></span>
 		</div>
 		
 		<p>&nbsp;</p>
@@ -252,29 +255,29 @@ THIS IS AN AUTOMATED RESPONSE.
 				<span style="color:red; font: bold 12px verdana; " id="checkid" ></span>
 
         <div style="clear:both;">
-          <label for="tel">Username</label> <span class="required"><font color="#CC0000">*</font></span>
+          <label for="tel">Username</label> <span class="required"><font color="#F29EB3">*</font></span>
         </div>
 
 		</div>
 		
 		<div class="pro_contactrow">
 			<input name="usr_email" type="text" id="usr_email" class="required" /> <i>ex: name@domain.com</i><br />
-      <label for="usr_email">Your Email</label> <span class="required email"><font color="#CC0000">*</font></span>
+      <label for="usr_email">Your Email</label> <span class="required email"><font color="#F29EB3">*</font></span>
 		</div>
 		
 		<div class="pro_contactrow">
 			<input name="pwd" type="password" class="required password" minlength="5" id="pwd" /> ** 5 chars minimum<br />
-			<label for="pwd">Password</label> <span class="required"><font color="#CC0000">*</font></span>
+			<label for="pwd">Password</label> <span class="required"><font color="#F29EB3">*</font></span>
 		</div>
 		
 		<div class="pro_contactrow">
 			<input name="pwd2"  id="pwd2" class="required password" type="password" minlength="5" equalto="#pwd" /><br />
-			<label for="pwd2">Retype Password</label> <span class="required"><font color="#CC0000">*</font></span>
+			<label for="pwd2">Retype Password</label> <span class="required"><font color="#F29EB3">*</font></span>
 		</div>
 
 		<div class="pro_contactrow">
 			<table><tr><td><?php require_once('recaptchalib.php'); echo recaptcha_get_html($publickey, null, true); ?></td></tr></table>
-			<label>Image Verification</label> <span class="required"><font color="#CC0000">*</font></span>
+			<label>Image Verification</label> <span class="required"><font color="#F29EB3">*</font></span>
 		</div>
 		
 		<div class="pro_contactrow">

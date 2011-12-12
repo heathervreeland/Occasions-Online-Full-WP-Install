@@ -94,8 +94,9 @@ if ($_POST['doLogin']=='Login') {
 	});
 </script>
 
-	<h2>Advertiser Login</h2>
-	<p>&nbsp;</p>
+	<div class="ruled left">
+    <span class="head2 ruled-text-left">Advertiser Login</span>
+    </div>
 	<?php
 		/******************** ERROR MESSAGES*************************************************
 		This code is to show error messages 
@@ -121,22 +122,40 @@ if ($_POST['doLogin']=='Login') {
       <label for="txtpass">Password</label>
 		</div>
 
-		<div class="pro_contactrow">
-			<input name="doLogin" type="submit" id="pro_contact_submit" value="Login" />
-			<input class="pro_checkbox" name="remember" type="checkbox" id="remember" value="1" /> <label for="remember">Remember me</label>
-		</div>
-
-		<div class="pro_contactrow">
+<div class="pro_contactrow">
       <a href="<?php echo PAGE_FORGOT; ?>">Forgot Your Password?</a>
 		</div>
 
 		<div class="pro_contactrow">
-			<a href="<?php echo PAGE_REGISTER; ?>">New Advertiser Registration</a>
+			<input name="doLogin" type="submit" id="pro_contact_submit" value="Login" />
+			<input class="pro_checkbox" name="remember" type="checkbox" id="remember" value="1" /> <label for="remember">Remember me</label>
 		</div>
+</form>
+		<div class="ruled left">
+<span class="head2 ruled-text-left">Not an Advertiser? Why Not?
+</span>
+    	</div>
+    
+    
+    	<div class="pro_contactrow">
+    
+  
+    
+   <img src="http://www.occasionsonline.com/wp-content/uploads/2011/12/features-included1.png" alt="Features Included" align="right" /> <p><em>Occasions</em> is the <strong>magazine for celebrating in style</strong>. We’re a whole new breed apart from the usual wedding-specific media, because although brides are our readers, so is everyone
+else too.</p>
+<p>Our online marketing program delivers a dedicated base of loyal readers who are not just shopping for weddings, but continuously come back with each new occasion they have on the calendar. Businesses can advertise online in various ways including business
+profiles in our vendor guide, large and small banners and sponsored blog posts.</p>
+    	</div>
+    
 
-        <p>&nbsp;</p>
-      </form>
-      <div style="height: 400px;">&nbsp;</div>
+	
+		<div class="head5" style="clear:both;"><a href="<?php echo PAGE_REGISTER; ?>"><img src="http://www.occasionsonline.com/wp-content/uploads/2011/12/49-month.png" alt="$49/month" align="right" />Get Started with an<br />
+	    Online Business Profile &raquo;</a></div>
+        
+
+        
+     
+<div style="height: 400px;">&nbsp;</div>
 	<script language="javascript">
 	<!--
 	   document.getElementById("txtemail").focus();

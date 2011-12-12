@@ -58,13 +58,12 @@ if (isset($_SESSION['user_id'])) {
 	}
 } else { 
 ?>
-<p>
+<p style="text-align:left;">
 <a href="<?php echo PAGE_LOGIN; ?>">Log In</a>
-</p>	
-<p>
+<br />
 <a href="<?php echo PAGE_FORGOT; ?>">Password Reset</a><br />
 <a href="<?php echo PAGE_REGISTER; ?>">New Advertiser Registration</a>
 </p>
-<?php } ?>
+<?php }  ?>
 </div>
 </div>
