@@ -92,6 +92,8 @@ function ao_mce_options( $init ) {
 	$init['relative_urls'] = false;
 	$init['remove_script_host'] = true;
 	$init['document_base_url'] = get_bloginfo('url') . '/';
+  $init['theme_advanced_buttons2_add'] = 'styleselect';
+  $init['theme_advanced_styles'] = 'Pink Headline=pink-head, Blue Headline=blue-head';
 	return $init;
 }
 add_filter('tiny_mce_before_init', 'ao_mce_options');
