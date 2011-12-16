@@ -74,7 +74,9 @@ $a_cart = array(
 	's2011'		=> 0,
 	's2011b'	=> 0,
 	'f2011'		=> 0,
-	'f2011b'	=> 0
+	'f2011b'	=> 0,
+	'w2012'		=> 0,
+	'w2012b'	=> 0
 );
 
 // descriptions
@@ -91,7 +93,9 @@ $a_desc = array(
 	's2011'		=> array('count' => 1,	'desc' => 'Summer 2011 Issue', 'cost' => 5.99),
 	's2011b'	=> array('count' => 10,	'desc' => 'Summer 2011 Issue (box of 10)', 'cost' => 50.00),
 	'f2011'		=> array('count' => 1,	'desc' => 'Fall 2011 Issue', 'cost' => 5.99),
-	'f2011b'	=> array('count' => 10,	'desc' => 'Fall 2011 Issue (box of 10)', 'cost' => 50.00)
+	'f2011b'	=> array('count' => 10,	'desc' => 'Fall 2011 Issue (box of 10)', 'cost' => 50.00),
+	'w2012'		=> array('count' => 1,	'desc' => 'Winter 2012 Issue', 'cost' => 5.99),
+	'w2012b'	=> array('count' => 10,	'desc' => 'Winter 2012 Issue (box of 10)', 'cost' => 50.00)
 );
 
 // then check to see if we have a shopping cart to load
@@ -856,9 +860,30 @@ $s1 .= '</select>';
 <div class="subscription-archives head3 oo-color-green">Order Archives</div>
 
 
+<!--
+-->
+<div class="backissue-block1 clearme"><div class="backissue-block2">
+	<img src="/media/images/occasions_winter2012_badge_145w.jpg" />
+	<div><span class="head3 oo-color-brown">Winter 2012 (current issue)</span></div>
+	<div class="head5 normalcase">REGION: Atlanta</div>
+  <p>Our Winter 2012 issue is over flowing with event ideas in our favorite 
+  hues of navy and rose gold.  Mixing a little bit of handy DIY work with 
+  the work of trained professionals, we take you on an anniversary party 
+  journey at Livingston Restaurant at The Georgian Terrace for an ultra 
+  hip walk down memory lane for one couple.  Our venue guide continues to 
+  grow with new locations added each issue!  We start our real event 
+  features with one wedding that has the most over-the-top stationery 
+  you've set to date!  You won't want to miss this issue so go ahead, get 
+  your copy today!</p>
+	<div class="priceline">
+		<div class="subscription-price"><input name="w2012" type="text" id="w2012" size="2" class="subscription-text" value="<?php echo $a_cart['w2012']; ?>" /> $5.99 EACH</div>
+		<div class="subscription-price"><input name="w2012b" type="text" id="w2012b" size="2" class="subscription-text" value="<?php echo $a_cart['w2012b']; ?>" /> $50.00 / BOX OF 10</div>
+	</div>
+</div></div>
+
 <div class="backissue-block1 clearme"><div class="backissue-block2">
 	<img src="/media/images/occasions_fall2011_badge_145w.jpg" />
-	<div><span class="head3 oo-color-brown">Fall 2011 (current issue)</span></div>
+	<div><span class="head3 oo-color-brown">Fall 2011</span></div>
 	<div class="head5 normalcase">REGION: Atlanta</div>
 	<p>Cozy up to our Fall 2011 issue and you'll find a vibrant plum and bronze 
 	color story set among one of Atlanta's newest venues, Foxhall Resort and 

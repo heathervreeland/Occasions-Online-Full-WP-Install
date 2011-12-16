@@ -202,9 +202,31 @@ THIS IS AN AUTOMATED RESPONSE.
 	  }
 	?>
       <div class="ruled left">
-    <span class="head2 ruled-text-left">New Advertiser Registration</span>
-    </div>
-      <p>Please register for a free courtesy advertiser account. Please note that fields marked <span class="required">*</span> 
+<span class="head2 ruled-text-left">Not an Advertiser? Why Not?
+</span>
+    	</div>
+    
+    
+    	<div class="pro_contactrow">
+    
+  
+    
+   <img src="http://www.occasionsonline.com/wp-content/uploads/2011/12/features-included1.png" alt="Features Included" align="right" /><p><em>Occasions</em> is the <strong>magazine for celebrating in style</strong>. We’re a whole new breed apart from the usual wedding-specific media, because although brides are our readers, so is everyone
+     else too.</p>
+<p>Our online marketing program delivers a dedicated base of loyal readers who are not just shopping for weddings, but continuously come back with each new occasion they have on the calendar. Businesses can advertise online in various ways including business
+profiles in our vendor guide, large and small banners and sponsored blog posts.</p>
+    	</div>
+    
+  
+
+	
+		
+      <div class="head5" style="clear:both;"><a href="http://mediakit.occasionsonline.com/local-print/advertiser-testimonials/"><span class="pro_contactrow"><img src="http://www.occasionsonline.com/wp-content/uploads/2011/12/49-month.png" alt="$49/month" align="right" /></span>Not convinced? Click here to read success stories and testimonials from our advertisers &raquo;</a></div>
+     
+   <p>&nbsp;</p>
+		<h2>New Advertiser Registration</h2>
+     
+      <p>Please register for a free courtesy advertiser account. Please note that fields marked <span class="required" style="color: #F29EB3;">*</span> 
         are required.</p>
 	 <?php
 	 if(!empty($err))  {
@@ -283,6 +305,12 @@ THIS IS AN AUTOMATED RESPONSE.
 		<div class="pro_contactrow">
 			<input name="doRegister" type="submit" id="pro_contact_submit" value="Register" />
 		</div>
+        
+        
+        <div class="head5" style="clear:both;"><a href="/frequently-asked-questions">View our Frequently Asked Questions Section<br />
+        if you'd like to learn more &raquo;</a></div>
+        
+        
       <div style="height: 400px;">&nbsp;</div>
 
       </form>
