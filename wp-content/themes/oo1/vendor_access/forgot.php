@@ -136,7 +136,7 @@ THIS IS AN AUTOMATED RESPONSE.
 ?>
 <p>If you have forgotten your account password, enter your username OR email address below. <b>Your password will be reset</b> and your new password will be sent to the email address on file.</p>
 	 
-<p>NOTE: if you have more than one profle with the same email address you MUST enter your username below.</p>
+<p>NOTE: if you have more than one profile with the same email address you MUST enter your username below.</p>
 	 
 <form action="<?php  echo PAGE_FORGOT; ?>" method="post" name="actForm" id="actForm" >
 
