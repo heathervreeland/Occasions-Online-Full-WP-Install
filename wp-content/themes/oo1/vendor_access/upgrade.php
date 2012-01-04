@@ -499,24 +499,18 @@ if(!empty($err))  {
 		</select>
 		<select class="vendor_select" name="card_exp_year" id="card_exp_year">
 		<?php
-		$a_years = array(
-			'2011'=>'2011',
-			'2012'=>'2012',
-			'2013'=>'2013',
-			'2014'=>'2014',
-			'2015'=>'2015',
-			'2016'=>'2016',
-			'2017'=>'2017',
-			'2018'=>'2018',
-			'2019'=>'2019'
-		);
-		foreach ($a_years as $key => $val) {
-			if ($a['card_exp_year'] == $key) {
-				echo '<option selected="true" value="', $key, '">', $val, '</option>';
+    // pull the current year
+    $current_year = date('Y');
+
+    // conduct 10 iterations and echo out options for the select list
+    for ( $i = 0; $i < 10; $i++ ) {
+			if ($a['card_exp_year'] == $current_year) {
+				echo '<option selected="true" value="', $current_year, '">', $current_year, '</option>';
 			} else {
-				echo '<option value="', $key, '">', $val, '</option>';
+				echo '<option value="', $current_year, '">', $current_year, '</option>';
 			}
-		}
+      $current_year = $current_year + 1;
+    }
 		?>
 		</select>
 	</p>
