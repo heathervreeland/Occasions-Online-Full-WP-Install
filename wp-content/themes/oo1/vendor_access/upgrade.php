@@ -440,9 +440,9 @@ if(!empty($err))  {
 	<p>&nbsp;</p>
 	<p class="vendor_label"><label for="payment_schedule">Select a Payment Schedule</label></p>
 	<p class="vendor_txt">
-		<input class="vendor_checkbox" name="payment_schedule" type="radio" id="payment_schedule1" value="1" <?php echo iif($a['payment_schedule'] == '1', 'checked', ''); ?> /> <label for="payment_schedule1">Month-to-Month - <b>$69 Per Month</b></label><br />
-		<input class="vendor_checkbox" name="payment_schedule" type="radio" id="payment_schedule2" value="2" <?php echo iif($a['payment_schedule'] == '2', 'checked', ''); ?> /> <label for="payment_schedule2">Annual Commitment - <b>$49 Per Month, Paid Monthly</b></label><br />
-		<input class="vendor_checkbox" name="payment_schedule" type="radio" id="payment_schedule3" value="3" <?php echo iif($a['payment_schedule'] == '3', 'checked', ''); ?> /> <label for="payment_schedule3">Annual Commitment - <b>$588, Paid Yearly</b></label><br />
+		<input class="vendor_checkbox" name="payment_schedule" type="radio" id="payment_schedule1" value="1" <?php echo iif($a['payment_schedule'] == '1', 'checked', ''); ?> /> <label for="payment_schedule1">Month-to-Month - <b>$79 Per Month</b></label><br />
+		<input class="vendor_checkbox" name="payment_schedule" type="radio" id="payment_schedule2" value="2" <?php echo iif($a['payment_schedule'] == '2', 'checked', ''); ?> /> <label for="payment_schedule2">Annual Commitment - <b>$59 Per Month, Paid Monthly</b></label><br />
+		<input class="vendor_checkbox" name="payment_schedule" type="radio" id="payment_schedule3" value="3" <?php echo iif($a['payment_schedule'] == '3', 'checked', ''); ?> /> <label for="payment_schedule3">Annual Commitment - <b>$708, Paid Yearly</b></label><br />
 	</p>
 	
 	<p>&nbsp;</p>
