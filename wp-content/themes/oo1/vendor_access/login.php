@@ -149,7 +149,7 @@ profiles in our vendor guide, large and small banners and sponsored blog posts.<
     
 
 	
-		<div class="head5" style="clear:both;"><a href="<?php echo PAGE_REGISTER; ?>"><img src="http://www.occasionsonline.com/wp-content/uploads/2011/12/49-month.png" alt="$49/month" align="right" />Get Started with an<br />
+		<div class="head5" style="clear:both;"><a href="<?php echo PAGE_REGISTER; ?>"><img src="http://www.occasionsonline.com/images/59-month.png" alt="$49/month" align="right" />Get Started with an<br />
 	    Online Business Profile &raquo;</a></div>
         
 
