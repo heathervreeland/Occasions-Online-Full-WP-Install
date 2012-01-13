@@ -39,7 +39,7 @@ $email_message = <<<HEREDOC
 <p>Dear $user_contact,</p>
 <p>Thank you for considering Occasions Magazine (OccasionsOnline.com) to promote your business. If you're looking for opportunities to advertise your business where you can reach brides, bat mitzvahs and birthday parties too, you've come to the right place.</p>
 
-<p>You can continue adding information and photographs to your listing, but the information in your courtesy account won't display live on the site until you upgrade to a business profile. Upgrading is easy and the only way to fully experience the benefits of membership and inclusion in the Occasions Magazine Vendor Guide. And it's so worth it.  <a target="_blank" href="http://www.occasionsonline.com/testimonials">Read our current advertiser testimonials here</a>.</p>
+<p>You can continue adding information and photographs to your listing, but the information in your courtesy account won't display live on the site until you upgrade to a business profile. Upgrading is easy and the only way to fully experience the benefits of membership and inclusion in the Occasions Magazine Vendor Guide. And it's so worth it.  <a target="_blank" href="http://mediakit.occasionsonline.com/local-print/advertiser-testimonials/">Read our current advertiser testimonials here</a>.</p>
 
 <p>Occasions Magazine advertisers enjoy online business profiles that include...</p>
 <ul>
@@ -55,8 +55,8 @@ $email_message = <<<HEREDOC
 <li>Discounted tickets to networking events</li>
 <li>Optional map of your location</li>
 </ul>
-<p>Month-to-Month $69 Per Month<br />
-Annual Commitments $49 paid each month or $588 in advance&nbsp;</p>
+<p>Month-to-Month $79 Per Month<br />
+Annual Commitments $59 paid each month or $708 in advance&nbsp;</p>
 <p>To get started, <a href="{$const['PAGE_LOGIN']}">login HERE</a> using the username and password you created and click on the &quot;My Profile&quot; link.</p>
 <p>We&rsquo;re excited to get to know you better. Feel free to contact us to so we can answer any questions you may have.</p>
 <p>Warmest Regards,</p>
