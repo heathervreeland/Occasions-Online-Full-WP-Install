@@ -221,7 +221,7 @@ profiles in our vendor guide, large and small banners and sponsored blog posts.<
 
 	
 		
-      <div class="head5" style="clear:both;"><a href="http://mediakit.occasionsonline.com/local-print/advertiser-testimonials/"><span class="pro_contactrow"><img src="http://www.occasionsonline.com/wp-content/uploads/2011/12/49-month.png" alt="$49/month" align="right" /></span>Not convinced? Click here to read success stories and testimonials from our advertisers &raquo;</a></div>
+      <div class="head5" style="clear:both;"><a href="http://mediakit.occasionsonline.com/local-print/advertiser-testimonials/"><span class="pro_contactrow"><img src="http://www.occasionsonline.com/images/59-month.png" alt="$59/month" align="right" /></span>Not convinced? Click here to read success stories and testimonials from our advertisers &raquo;</a></div>
      
    <p>&nbsp;</p>
 		<h2>New Advertiser Registration</h2>
