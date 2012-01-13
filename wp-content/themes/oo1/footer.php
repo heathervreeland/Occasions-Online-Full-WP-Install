@@ -82,7 +82,7 @@
 			<a href="/badges">Link To Us</a> |
 			<a href="/about">About</a> |
 			<a href="/submissions">Editorial Submissions</a> |
-			<a onfocus="this.blur();" class="issue_link" href="http://issuu.com/occasionsmagazine/docs/fall2011?mode=embed&layout=http://skin.issuu.com/v/light/layout.xml&showFlipBtn=true">View Magazine</a> |
+      <a onfocus="this.blur();" class="issue_link" href="http://issuu.com/occasionsmagazine/docs/winter2012?mode=embed&layout=http://skin.issuu.com/v/light/layout.xml&showFlipBtn=true">view magazine</a>
 			<a href="/where-to-buy">Where To Buy</a> |
 			<a href="/terms-of-use">Terms of Use</a> |
 			<a href="/privacy-policy">Privacy Policy</a>
