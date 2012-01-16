@@ -57,19 +57,19 @@ if ($_POST['submitted'] == "1") {
 	}
 
 	if ($a['payment_schedule'] == '1') {
-		$subscription_total = 69.00;
+		$subscription_total = 79.00;
 		$subscription_length = 1;
 		$subscription_unit = 'months';
 		$start_date = date("Y-m-d", dateadd_months(time(), 1));
 	}
 	elseif ($a['payment_schedule'] == '2') {
-		$subscription_total = 49.00;
+		$subscription_total = 59.00;
 		$subscription_length = 1;
 		$subscription_unit = 'months';
 		$start_date = date("Y-m-d", dateadd_months(time(), 1));
 	}
 	elseif ($a['payment_schedule'] == '3') {
-		$subscription_total = 588.00;
+		$subscription_total = 708.00;
 		$subscription_length = 12;
 		$subscription_unit = 'months';
 		$start_date = date("Y-m-d", dateadd_months(time(), 12));
