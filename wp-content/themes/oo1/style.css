@@ -3510,5 +3510,75 @@ display: none;
 }
 
 
+/* 
+**********************************************
+Gravity Forms
+**********************************************
+*/
 
 
+.gform_wrapper .gfield_required {
+    color: #F29EB3 !important;
+
+}
+
+.gform_wrapper input[type="text"], .gform_wrapper input[type="url"], .gform_wrapper input[type="email"], .gform_wrapper input[type="tel"], .gform_wrapper input[type="number"], .gform_wrapper input[type="password"] {
+	margin-bottom:2px !important;
+	padding: 5px !important;
+	font-size:14px !important;
+	line-height:24px !important;line-height:2.4rem !important;
+	border:3px solid #D3D2CA;
+	background-color:#E9E9E0;
+	color: #666;
+	height:26px;
+}
+
+
+.gform_wrapper textarea {
+	margin-bottom:2px !important;
+	padding:5px !important;
+	font-size:14px !important;
+	line-height:24px !important;line-height:2.4rem !important;
+	border:3px solid #D3D2CA;
+	background-color:#E9E9E0;
+	color: #666;
+
+}
+
+.gform_wrapper .ginput_complex label, .gform_wrapper .gfield_time_hour label, .gform_wrapper .gfield_time_minute label, .gform_wrapper .gfield_date_month label, .gform_wrapper .gfield_date_day label, .gform_wrapper .gfield_date_year label, .gform_wrapper .instruction {margin-bottom:15px !important }
+
+
+.gform_wrapper .gform_footer input.button, .gform_wrapper .gform_footer input[type="submit"] {
+	border: 1px solid #00A79D;
+	margin-left:0;
+	padding: 10px;
+	font-size:30px;
+  color:#00A79D;
+  outline:none;
+  font-family: GillSansRegular, "Trebuchet MS",Arial,Helvetica,Sans-Serif;
+  font-weight: normal;
+  cursor:pointer;
+  text-align:center;
+  font-style: normal;
+  text-transform: uppercase;
+  background: transparent;
+  letter-spacing:1px;
+}
+
+.gform_wrapper .gsection {
+    border-bottom: 1px dotted #00A79D !important;
+}
+
+
+.gform_wrapper .gform_edit_link {
+	display:none;	
+}
+
+.gform_wrapper .top_label .gfield_label { font-size: 14px; margin-top:20px !important; }
+
+h2.gsection_title {  font-size: 30px !important; font-weight:normal !important;    }
+
+
+.gform_wrapper .gsection {  margin-top:50px !important; }
+
+.gform_wrapper .description, .gform_wrapper .gfield_description, .gform_wrapper .gsection_description, .gform_wrapper .instruction { font-size: 14px !important;     }
