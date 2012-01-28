@@ -35,6 +35,7 @@ else { ?>
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
 <script type="text/javascript" src="/media/js/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js" ></script>
 <script type='text/javascript' src='<?php bloginfo('stylesheet_directory'); ?>/plum-gallery/jquery.plum-gallery.js'></script>
 <script type="text/javascript" src="/media/js/jquery.qtip-1.0.0-rc3-min.js"></script>
 <script type="text/javascript" src="/media/js/jquery.validate.js"></script>
@@ -92,6 +93,8 @@ GA_googleFetchAds();
 <script type='text/javascript' src='/wp-includes/js/swfobject.js?ver=2.1'></script>
 <script type="text/javascript" src="/media/js/spry/SpryCollapsiblePanel.js"></script>
 <script type="text/javascript" src="/media/js/colorbox/jquery.colorbox-min.js"></script>
+
+<script type="text/javascript" src="/media/js/general.js"></script>
 
 <script type="text/javascript">
 
@@ -247,7 +250,7 @@ GA_googleFetchAds();
 <ul><li><a href="/party-ideas/colors">Search by Color</a></li><li><a href="/party-ideas/party-themes">Search by Theme</a></li><li><a href="/party-ideas/event-elements">Search by Event</a></li></ul>
 </li>
 <li><a href="/events/">Real Events</a>
-<ul><li><a href="/events/real-weddings/">Weddings</a></li><li><a href="/events/real-mitzvahs/">Mitzvahs</a></li><li><a href="/party-ideas/party-themes/baby-shower-ideas-party-themes">Real Baby Showers</a></li><li><a href="/party-ideas/party-themes/birthday-party-ideas">Real Birthday Parties</a></li><li><a href="/featured-events">Featured In Print</a></li></ul>
+<ul><li><a href="/events/real-weddings/">Weddings</a></li><li><a href="/events/real-mitzvahs/">Mitzvahs</a></li><li><a href="/party-ideas/party-themes/baby-shower-ideas-party-themes">Real Baby Showers</a></li><li><a href="/party-ideas/party-themes/birthday-party-ideas">Real Birthday Parties</a></li><!--li><a href="/featured-events">Featured In Print</a></li--></ul>
 </li>
 <li><a href="/event-planning">Event Elements</a>
 	<ul><?php echo preg_replace("/[\t\n\r\f\v]/", "", wp_list_categories('hide_empty=false&child_of=12&title_li=&echo=0')); ?></ul>
@@ -301,8 +304,8 @@ GA_googleFetchAds();
 			array('title' => 'Real Weddings', 				'url' => '/events/real-weddings'),
 			array('title' => 'Real Mitzvahs', 				'url' => '/events/real-mitzvahs'),
 			array('title' => 'Real Baby Showers',			'url' => '/party-ideas/party-themes/baby-shower-ideas-party-themes'),
-			array('title' => 'Real Birthday Parties', 		'url' => '/party-ideas/party-themes/birthday-party-ideas'),
-			array('title' => 'Featured in Print',			'url' => '/featured-events')
+			array('title' => 'Real Birthday Parties', 		'url' => '/party-ideas/party-themes/birthday-party-ideas')
+			//array('title' => 'Featured in Print',			'url' => '/featured-events')
 		);
 	}
 	elseif ($section == 'party-ideas') {
