@@ -1276,6 +1276,7 @@ HOME PAGE CONTENT AREA
 
 #oo-real-section {
 	width: 612px;
+  min-height:450px;
 	margin-top: 25px;
 	}
 	.oo-real-block {
@@ -2453,6 +2454,17 @@ select {
 	margin: 0;
 	}
 /* End Sidebar */
+
+
+/* Begin Sidebar Tabs */
+#sidebar-tabs ul { padding:0;margin:0; }
+#sidebar-tabs li{ width:25%; text-align:center; }
+#sidebar-tabs div { clear:both; }
+#sidebar-tabs .tab-hide { display: none; }
+/*
+#sidebar-tabs .tab-hide.active { display: block; }
+*/
+/* End Sidebar Tabs */
 
 
 
