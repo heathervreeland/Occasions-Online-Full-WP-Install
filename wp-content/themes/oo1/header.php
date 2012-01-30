@@ -10,7 +10,8 @@
 <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
 <meta name="alexaVerifyID" content="KemOZK3goi3teGuO-Phi0tUDJZA" />
-<?php if (ao_get_title()) { 
+<?php 
+if (ao_get_title()) { 
 echo '<title>', ao_get_title(), '</title>';
 }
 else { ?>
@@ -196,6 +197,17 @@ GA_googleFetchAds();
 </head>
 <body <?php body_class(); ?>>
 <div id="oo-container">
+<?php
+//global $wp_query;
+//$cat_array = $wp_query->query;
+//$cat = $cat_array['category_name'];
+	if (ao_get_in_guide()) {
+  //$vendor_info = get_vendorfields();
+  //echo 'the category is ' . $cat . '<br />';
+?>
+  <!--in the vendor area-->
+<?php } 
+//var_dump($wp_query); ?>
 	<div id="oo-outernav">
 		<div id="oo-topnav">
 			<div id="oo-connect">

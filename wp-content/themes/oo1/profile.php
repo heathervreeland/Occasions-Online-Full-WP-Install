@@ -352,7 +352,21 @@ wp_enqueue_script('carousel-javascript','/media/js/jcarousel/lib/jquery.jcarouse
 wp_enqueue_script('slideshow-javascript','/media/js/slideshow.js','jquery-cycle,carousel-javascript',1,TRUE);
 
 
-get_header();
+/* 
+added by Ben Kaplan - 1/30/12 
+  - replace get_header() with include in order to set variable for <title> in header 
+  - setting so_set_title() here ensures this form of title tag is only used by pages using this template
+*/
+
+// pull the Business Name, Category, and City & State
+$page_title = $a['name'] . ' | ' . ucwords( $a['cat1'] ) . ' | ' . $a['city'] . ', ' . $a['state'];
+
+// set the title to above page_title
+$set_the_browser = ao_set_title($page_title);
+
+// include header, rather than standard get_header() in order to set <title> tag in header
+include('header.php');
+
 
 $s = <<<HEREDOC
 <div class="post">
@@ -483,6 +497,7 @@ $s .= '</div>';
 	$s .= '</div>';
 
 ao_set_sidebar_content($s, "prewidget");
+
 ?>
 
 
