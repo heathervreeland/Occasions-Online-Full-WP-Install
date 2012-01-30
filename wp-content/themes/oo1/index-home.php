@@ -181,28 +181,11 @@ foreach($lastposts as $post) : setup_postdata($post);
 </div>
 <!-- oo-adsense-links -->
 
-
-
-
-<div id="oo-real-section" class="clearme">
-	<div class="head2">Recent Real Event Features</div>
-
-	<?php
-	$args = array( 'showposts' => 8, 'category' => 11 );
-	$lastposts = get_posts( $args );
-	foreach($lastposts as $post) : setup_postdata($post);
-	
-		include('block-event-thumb125.php');
-		
-	endforeach;
-	?>
-
-</div>
+<?php
+/* added by Ben Kaplan 1/29/12 - created function to pull code out of html */
+echo recent_real_events();
+?>
 <!-- oo-real-section -->
-
-
-
-
 
 <div id="oo-elements-section" class="clearme">
 	<?php

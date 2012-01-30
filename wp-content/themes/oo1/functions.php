@@ -503,6 +503,69 @@ function dateadd_months($base_time = null, $months = 1) {
 	return $x_months_to_the_future;
 }
 
+/*  added by Ben Kaplan 1/29/2012 - 
+ *  - new function to output recent real event features
+ *  - pulls 8 posts from category 11, 'Real Events' 
+ *  - duplicates block-event-thumb125.php and block-thum125.php but returns results instead of echos
+ *  - created for shortcode for insertion into page or post
+ ******************/
+
+function recent_real_events() {
+  wp_reset_postdata();
+	$args = array( 'posts_per_page' => 8, 'cat' => 11, 'order' => 'DESC', 'orderby' => 'date'  );
+	$latestposts = get_posts( $args );
+  $output = '';
+  $output .= '<div id="oo-real-section" class="">';
+  $output .= '<div class="head2">Recent Real Event Features</div>';
+  foreach ( $latestposts as $apost ) : setup_postdata($apost);
+  
+    $post_id = $apost->ID;
+    $title = get_the_title();
+    $link = get_permalink( $post_id );
+    $etitle = get_post_meta($post_id, 'event_title', true);
+    $elocation = get_post_meta($post_id, 'event_location', true);
+    $gallery_id = get_post_meta($post_id, 'gallery_id', true);
+    
+    if (!$etitle) { $etitle = 'Occasions Event';}
+    if (!$elocation) { $elocation = 'USA';}
+
+    $output .= '<div class="oo-real-block" onclick="window.location.href=\'' . $link . '\';">';
+
+		$got_thumb = false;
+		$gallery_id = get_post_meta($post_id, 'gallery_id', true);
+		
+		// first get any post thumbnail that might exist
+		if (has_post_thumbnail()) {
+			$output .= get_the_post_thumbnail( $post_id, array(125,125));
+			$got_thumb = true;;
+		}
+		
+		// ...then try to get the thumb from the first thumbnail from the gallery, if one exists
+		if (!$got_thumb && $gallery_id) {
+			$gallery_image = oo_get_first_gallery_thumbnail($gallery_id);
+			if ($gallery_image) {
+				$output .= $gallery_image;
+				$got_thumb = true;
+			}
+		}
+
+		// ...and if all else fails, use the default thumb
+		if (!$got_thumb) {
+			$output .= '<img src="/media/images/mag-thumb.png" class="attachment-145x145 wp-post-image" alt="" title="">';
+		}
+
+
+    $output .= '<p class="centered">' .$etitle . '<br />' . $elocation . '</p>';
+    $output .= '</div><!-- oo-element-block -->';
+    
+  endforeach;
+  $output .= '</div>';
+  return $output;
+  wp_reset_postdata();
+}
+// appended an 'a' in front of recent-real-events as without it was generating a different gallery.  Must be used elsewhere.
+add_shortcode( 'arecent-real-events', 'recent_real_events' );
+
 function popular_posts($num, $trim_to_length = 0) {
 
     global $wpdb;
