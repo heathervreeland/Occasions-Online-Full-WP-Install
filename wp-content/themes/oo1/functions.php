@@ -512,7 +512,7 @@ function dateadd_months($base_time = null, $months = 1) {
 
 function recent_real_events() {
   wp_reset_postdata();
-	$args = array( 'posts_per_page' => 8, 'cat' => 11, 'order' => 'DESC', 'orderby' => 'date'  );
+	$args = array( 'numberposts' => '8', 'cat' => '11' );
 	$latestposts = get_posts( $args );
   $output = '';
   $output .= '<div id="oo-real-section" class="">';
