@@ -697,9 +697,9 @@ small {
 	}
 
 .post-social-buttons {
-	overflow: hidden;
+	overflow: visible;
 	margin: 10px 0px;
-	height: 35px;
+	min-height: 35px;
 	}
 	
 .post-social-twitter {
@@ -714,9 +714,16 @@ small {
 	}
 .post-social-facebook {
 	float: left;
-	height: 35px;
 	width: 275px;
 	}
+.single-image .post-social-facebook {
+	width: 95px;
+  }
+.post-social-pinterest {
+	float: left;
+	height: 35px;
+	width: 75px;
+}
 .post-social-1plus {
 	float: right;
 	height: 35px;
@@ -2900,7 +2907,9 @@ div.aligncenter {
     border-bottom: 4px double #8B8679;
 	}
 	#pro-top1 h1 {
-		margin: 0px;
+		margin: 0 0 10px 0;
+    font-family: 'WinterthurCondensedRegular';
+    font-size: 2.2em;
 		}
 	#pro-social-block {
 		position: absolute;
