@@ -359,14 +359,15 @@ added by Ben Kaplan - 1/30/12
 */
 
 // pull the Business Name, Category, and City & State
-$page_title = $a['name'] . ' | ' . ucwords( $a['cat1'] ) . ' | ' . $a['city'] . ', ' . $a['state'];
+$venue_type = $a['cat1'];
+$venue_title = ao_reset_title( $venue_type );
+$page_title = $a['name'] . ' | ' . ucwords( $venue_title ) . ' | ' . $a['city'] . ', ' . $a['state'];
 
 // set the title to above page_title
 $set_the_browser = ao_set_title($page_title);
 
 // include header, rather than standard get_header() in order to set <title> tag in header
 include('header.php');
-
 
 $s = <<<HEREDOC
 <div class="post">
