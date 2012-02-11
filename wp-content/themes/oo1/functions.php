@@ -272,6 +272,64 @@ function ao_set_title($content) {
 	$ao_title = $content;
 }
 
+/*
+ * resets vendor type usually in browser title with specific changes based upon category
+ */
+function ao_reset_title( $title ) {
+  
+  switch ( $title ) {
+
+    case 'cakes':
+      $title = 'Wedding and Birthday ' . $title;
+      return $title;
+      break;
+    case 'flowers':
+      $title = 'Wedding and Party Decor ' . $title;
+      return $title;
+      break;
+    case 'dresses':
+      $title = 'Wedding ' . $title;
+      return $title;
+      break;
+    case 'wedding-dresses':
+      $title = 'Wedding Dresses';
+      return $title;
+      break;
+    case 'hairmakeup':
+      $title = 'wedding hair & makeup';
+      return $title;
+      break;
+    case 'hotels':
+      $title = 'Guest Accommodations and ' . $title;
+      return $title;
+      break;
+    case 'lighting':
+      $title = $title . ' design';
+      return $title;
+      break;
+    case 'registries':
+      $title = 'wedding ' . $title;
+      return $title;
+      break;
+    case 'rehearsal-dinners':
+      $title = 'Wedding and Rehearsal Dinners';
+      return $title;
+      break;
+    case 'Rehearsal Dinner':
+      $title = 'Wedding and Rehearsal Dinners';
+      return $title;
+      break;
+    case 'rental-companies':
+      $title = 'Wedding and Party Rental Companies';
+      return $title;
+      break;
+    default:
+      $title = 'Wedding and Party ' . $title;
+      return $title;
+  }
+
+}
+
 function ao_get_title() {
 	global $ao_title;
 	return $ao_title;
