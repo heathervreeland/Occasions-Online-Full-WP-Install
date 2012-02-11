@@ -639,11 +639,16 @@ BLOG ROLL / BLOG POSTS
 	text-align: justify;
 	}
 
+.ngg-imagebrowser img,
+.ngg-gallery-thumbnail img,
+.oo-gallery-thumb img,
+#slideshow-main li div img,
 p img {
 	position: relative;
 	padding: 10px;
 	margin-bottom: 20px;
 	max-width: 592px;
+  border:none !important;
 	background: #FFF;
 	-moz-box-shadow:    0px 0px 10px #CCC;
 	-webkit-box-shadow: 0px 0px 10px #CCC;
@@ -975,7 +980,7 @@ GALLERIES
 		width: 180px;
 		height: 180px;
 		padding: 5px;
-		border: 1px solid #CCC;
+/*		border: 1px solid #CCC;*/
 		}
 	.oo-gallery-thumb p {
 		text-align: center;
@@ -2908,7 +2913,7 @@ div.aligncenter {
 	}
 	#pro-top1 h1 {
 		margin: 0 0 10px 0;
-    font-family: 'WinterthurCondensedRegular';
+    font-family: WinterthurCondensedRegular, Arial, Sans-Serif;
     font-size: 2.2em;
 		}
 	#pro-social-block {
