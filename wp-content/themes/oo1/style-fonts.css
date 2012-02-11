@@ -12,6 +12,88 @@
 }
 
 @font-face {
+    font-family: 'AdiosScriptProRegular';
+    src: url('/media/fonts/adios_script_pro-webfont.eot');
+    src: url('/media/fonts/adios_script_pro-webfont.eot?iefix') format('embedded-opentype'),
+         url('/media/fonts/adios_script_pro-webfont.woff') format('woff'),
+         url('/media/fonts/adios_script_pro-webfont.ttf') format('truetype'),
+         url('/media/fonts/adios_script_pro-webfont.svg#webfontFWWiZ6Wz') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DeliciousItalic';
+    src: url('/media/fonts/delicious-italic-webfont.eot');
+    src: url('/media/fonts/delicious-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/media/fonts/delicious-italic-webfont.woff') format('woff'),
+         url('/media/fonts/delicious-italic-webfont.ttf') format('truetype'),
+         url('/media/fonts/delicious-italic-webfont.svg#DeliciousItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Delicious';
+    src: url('/media/fonts/delicious-roman-webfont.eot');
+    src: url('/media/fonts/delicious-roman-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/media/fonts/delicious-roman-webfont.woff') format('woff'),
+         url('/media/fonts/delicious-roman-webfont.ttf') format('truetype'),
+         url('/media/fonts/delicious-roman-webfont.svg#DeliciousRoman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'DeliciousSmallCaps';
+    src: url('/media/fonts/delicious-smallcaps-webfont.eot');
+    src: url('/media/fonts/delicious-smallcaps-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/media/fonts/delicious-smallcaps-webfont.woff') format('woff'),
+         url('/media/fonts/delicious-smallcaps-webfont.ttf') format('truetype'),
+         url('/media/fonts/delicious-smallcaps-webfont.svg#DeliciousSmallCapsRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'DeliciousBoldItalic';
+    src: url('/media/fonts/delicious-bolditalic-webfont.eot');
+    src: url('/media/fonts/delicious-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/media/fonts/delicious-bolditalic-webfont.woff') format('woff'),
+         url('/media/fonts/delicious-bolditalic-webfont.ttf') format('truetype'),
+         url('/media/fonts/delicious-bolditalic-webfont.svg#DeliciousBoldItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'DeliciousBold';
+    src: url('/media/fonts/delicious-bold-webfont.eot');
+    src: url('/media/fonts/delicious-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/media/fonts/delicious-bold-webfont.woff') format('woff'),
+         url('/media/fonts/delicious-bold-webfont.ttf') format('truetype'),
+         url('/media/fonts/delicious-bold-webfont.svg#DeliciousBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'DeliciousHeavy';
+    src: url('/media/fonts/delicious-heavy-webfont.eot');
+    src: url('/media/fonts/delicious-heavy-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/media/fonts/delicious-heavy-webfont.woff') format('woff'),
+         url('/media/fonts/delicious-heavy-webfont.ttf') format('truetype'),
+         url('/media/fonts/delicious-heavy-webfont.svg#DeliciousHeavyRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
     font-family: 'GillSansRegular';
     src: url('/media/fonts/gillsans-webfont.eot');
     src: url('/media/fonts/gillsans-webfont.eot?iefix') format('embedded-opentype'),
@@ -34,6 +116,16 @@
 }
 
 @font-face {
+    font-family: 'LaneNarrowRegular';
+    src: url('/media/fonts/lane-narrow-regular-webfont.eot');
+    src: url('/media/fonts/lane-narrow-regular-webfont.eot?iefix') format('embedded-opentype'),
+         url('/media/fonts/lane-narrow-regular-webfont.woff') format('woff'),
+         url('/media/fonts/lane-narrow-regular-webfont.ttf') format('truetype'),
+         url('/media/fonts/lane-narrow-regular-webfont.svg#webfontFWWiZ6Wz') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
     font-family: 'OptimaRegular';
     src: url('/media/fonts/optimaregular-webfont.eot');
     src: url('/media/fonts/optimaregular-webfont.eot?iefix') format('embedded-opentype'),
@@ -44,27 +136,6 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'AdiosScriptProRegular';
-    src: url('/media/fonts/adios_script_pro-webfont.eot');
-    src: url('/media/fonts/adios_script_pro-webfont.eot?iefix') format('embedded-opentype'),
-         url('/media/fonts/adios_script_pro-webfont.woff') format('woff'),
-         url('/media/fonts/adios_script_pro-webfont.ttf') format('truetype'),
-         url('/media/fonts/adios_script_pro-webfont.svg#webfontFWWiZ6Wz') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'LaneNarrowRegular';
-    src: url('/media/fonts/lane-narrow-regular-webfont.eot');
-    src: url('/media/fonts/lane-narrow-regular-webfont.eot?iefix') format('embedded-opentype'),
-         url('/media/fonts/lane-narrow-regular-webfont.woff') format('woff'),
-         url('/media/fonts/lane-narrow-regular-webfont.ttf') format('truetype'),
-         url('/media/fonts/lane-narrow-regular-webfont.svg#webfontFWWiZ6Wz') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
 
 @font-face {
     font-family: 'QuillineScriptThinRegular';
